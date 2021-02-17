@@ -67,6 +67,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CapaUsuarios\CatalogoEventos.aspx" />
+    <Content Include="CapaUsuarios\CatalogoMultimedia.aspx" />
+    <Content Include="CapaUsuarios\CatalogoMusica.aspx" />
+    <Content Include="CapaUsuarios\CatalogoNoticias.aspx" />
+    <Content Include="CapaUsuarios\CatalogoVinculos.aspx" />
+    <Content Include="CapaUsuarios\Evento.aspx" />
+    <Content Include="CapaUsuarios\InicioSesion.aspx" />
+    <Content Include="CapaUsuarios\MainMenu.aspx" />
+    <Content Include="CapaUsuarios\MainMenuAdmin.aspx" />
+    <Content Include="CapaUsuarios\Multimedia.aspx" />
+    <Content Include="CapaUsuarios\Musica.aspx" />
+    <Content Include="CapaUsuarios\Noticia.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
@@ -79,6 +91,90 @@
     <Compile Include="CapaNegocios\Evento.cs" />
     <Compile Include="CapaNegocios\Noticia.cs" />
     <Compile Include="CapaNegocios\Vinculo.cs" />
+    <Compile Include="CapaUsuarios\CatalogoEventos.aspx.cs">
+      <DependentUpon>CatalogoEventos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaUsuarios\CatalogoEventos.aspx.designer.cs">
+      <DependentUpon>CatalogoEventos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaUsuarios\CatalogoMultimedia.aspx.cs">
+      <DependentUpon>CatalogoMultimedia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaUsuarios\CatalogoMultimedia.aspx.designer.cs">
+      <DependentUpon>CatalogoMultimedia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaUsuarios\CatalogoMusica.aspx.cs">
+      <DependentUpon>CatalogoMusica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaUsuarios\CatalogoMusica.aspx.designer.cs">
+      <DependentUpon>CatalogoMusica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaUsuarios\CatalogoNoticias.aspx.cs">
+      <DependentUpon>CatalogoNoticias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaUsuarios\CatalogoNoticias.aspx.designer.cs">
+      <DependentUpon>CatalogoNoticias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaUsuarios\CatalogoVinculos.aspx.cs">
+      <DependentUpon>CatalogoVinculos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaUsuarios\CatalogoVinculos.aspx.designer.cs">
+      <DependentUpon>CatalogoVinculos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaUsuarios\Evento.aspx.cs">
+      <DependentUpon>Evento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaUsuarios\Evento.aspx.designer.cs">
+      <DependentUpon>Evento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaUsuarios\InicioSesion.aspx.cs">
+      <DependentUpon>InicioSesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaUsuarios\InicioSesion.aspx.designer.cs">
+      <DependentUpon>InicioSesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaUsuarios\MainMenu.aspx.cs">
+      <DependentUpon>MainMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaUsuarios\MainMenu.aspx.designer.cs">
+      <DependentUpon>MainMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaUsuarios\MainMenuAdmin.aspx.cs">
+      <DependentUpon>MainMenuAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaUsuarios\MainMenuAdmin.aspx.designer.cs">
+      <DependentUpon>MainMenuAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaUsuarios\Multimedia.aspx.cs">
+      <DependentUpon>Multimedia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaUsuarios\Multimedia.aspx.designer.cs">
+      <DependentUpon>Multimedia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaUsuarios\Musica.aspx.cs">
+      <DependentUpon>Musica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaUsuarios\Musica.aspx.designer.cs">
+      <DependentUpon>Musica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaUsuarios\Noticia.aspx.cs">
+      <DependentUpon>Noticia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaUsuarios\Noticia.aspx.designer.cs">
+      <DependentUpon>Noticia.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
@@ -97,9 +193,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CapaUsuarios\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
