@@ -52,6 +52,7 @@ namespace ProyectoWebBanda.CapaDatos
             }
         }
 
+        //METODO PARA OBTENER TODOS LOS EVENTOS DE LA BASE DE DATOS
         public List<Evento> mMostrarEventos()
         {
             //SE LLAMA LA CONEXION A LA BASE DE DATOS
@@ -84,6 +85,7 @@ namespace ProyectoWebBanda.CapaDatos
 
         }
 
+        //METODO PARA OBTENER LOS DATOS DE UN EVENTO
         public List<Evento> cargarDatos(ref int id)
         {
             //SE LLAMA LA CONEXION A LA BASE DE DATOS
@@ -117,7 +119,7 @@ namespace ProyectoWebBanda.CapaDatos
         }
 
 
-
+        //METODO PARA MODIFICAR UN EVENTO EN LA BASE DE DATOS
         public bool modificar(int Id, string Nombre, string Fecha, string Ubicacion, string Link)
         {
             //SE LLAMA LA CONEXION A LA BASE DE DATOS
@@ -155,7 +157,7 @@ namespace ProyectoWebBanda.CapaDatos
         }
 
 
-
+        //METODO PARA ELIMINAR UN EVENTO DE LA BASE DE DATOS
         public void eliminar(ref Evento objEvent)
         {
             //LLAMAMOS LA CONEXION A LA BASE DE DATOS
