@@ -22,6 +22,21 @@
         </p>
         <asp:Label ID="Label4" runat="server" Text="Link"></asp:Label>
         <asp:TextBox ID="txtLink" runat="server" style="margin-left: 7px" Width="276px"></asp:TextBox>
+        <p>
+            <asp:Button ID="btnAgregarEvento" runat="server" OnClick="btnAgregarEvento_Click" style="margin-left: 32px" Text="Agregar" Width="65px" />
+            <asp:Button ID="btnEditar" runat="server" OnClick="btnEditar_Click" style="margin-left: 23px" Text="Editar" />
+            <asp:Button ID="btnEliminar" runat="server" OnClick="btnEliminar_Click" style="margin-left: 25px" Text="Eliminar" />
+        </p>
+        <asp:Label ID="lblNotifu" runat="server"></asp:Label>
+        <asp:GridView ID="gvEventos" runat="server">
+        </asp:GridView>
+        <p>
+            <asp:Label ID="Label6" runat="server" Text="Escribe el id del evento para eliminar o editar"></asp:Label>
+        </p>
+        <p>
+            <asp:TextBox ID="txtId" runat="server" style="margin-top: 0px"></asp:TextBox>
+            <asp:Button ID="btnCargar" runat="server" OnClick="btnCargar_Click" style="margin-left: 16px" Text="Cargar datos para editar" />
+        </p>
     </form>
 </body>
 </html>

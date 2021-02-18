@@ -13,7 +13,7 @@ namespace ProyectoWebBanda.CapaDatos
         {
             try
             {
-                conex.ConnectionString = "server=localhost;database=prograweb2;user id =root;password=root1;";
+                conex.ConnectionString = "server=localhost;database=web120M;user id =root;password=root1;";
                 conex.Open();
             }
             catch (Exception)
