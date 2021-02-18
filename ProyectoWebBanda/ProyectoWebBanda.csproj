@@ -86,6 +86,8 @@
   <ItemGroup>
     <Compile Include="CapaDatos\DaoAbstracto.cs" />
     <Compile Include="CapaDatos\DaoConexion.cs" />
+    <Compile Include="CapaDatos\DaoEventos.cs" />
+    <Compile Include="CapaDatos\DaoNoticias.cs" />
     <Compile Include="CapaNegocios\Admin.cs" />
     <Compile Include="CapaNegocios\Album.cs" />
     <Compile Include="CapaNegocios\Cancion.cs" />
