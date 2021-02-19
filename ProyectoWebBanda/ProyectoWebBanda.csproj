@@ -72,11 +72,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CapaUsuarios\Admin\AdminLogin.aspx" />
-    <Content Include="CapaUsuarios\CatalogoEventos.aspx" />
-    <Content Include="CapaUsuarios\CatalogoMultimedia.aspx" />
-    <Content Include="CapaUsuarios\CatalogoMusica.aspx" />
-    <Content Include="CapaUsuarios\CatalogoNoticias.aspx" />
-    <Content Include="CapaUsuarios\CatalogoVinculos.aspx" />
+    <Content Include="CapaUsuarios\Admin\CatalogoEventos.aspx" />
+    <Content Include="CapaUsuarios\Admin\CatalogoMultimedia.aspx" />
+    <Content Include="CapaUsuarios\Admin\CatalogoMusica.aspx" />
+    <Content Include="CapaUsuarios\Admin\CatalogoNoticias.aspx" />
+    <Content Include="CapaUsuarios\Admin\CatalogoVinculos.aspx" />
     <Content Include="CapaUsuarios\Evento.aspx" />
     <Content Include="CapaUsuarios\InicioSesion.aspx" />
     <Content Include="CapaUsuarios\MainMenu.aspx" />
@@ -105,39 +105,39 @@
     <Compile Include="CapaUsuarios\Admin\AdminLogin.aspx.designer.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="CapaUsuarios\CatalogoEventos.aspx.cs">
+    <Compile Include="CapaUsuarios\Admin\CatalogoEventos.aspx.cs">
       <DependentUpon>CatalogoEventos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CapaUsuarios\CatalogoEventos.aspx.designer.cs">
+    <Compile Include="CapaUsuarios\Admin\CatalogoEventos.aspx.designer.cs">
       <DependentUpon>CatalogoEventos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="CapaUsuarios\CatalogoMultimedia.aspx.cs">
+    <Compile Include="CapaUsuarios\Admin\CatalogoMultimedia.aspx.cs">
       <DependentUpon>CatalogoMultimedia.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CapaUsuarios\CatalogoMultimedia.aspx.designer.cs">
+    <Compile Include="CapaUsuarios\Admin\CatalogoMultimedia.aspx.designer.cs">
       <DependentUpon>CatalogoMultimedia.aspx</DependentUpon>
     </Compile>
-    <Compile Include="CapaUsuarios\CatalogoMusica.aspx.cs">
+    <Compile Include="CapaUsuarios\Admin\CatalogoMusica.aspx.cs">
       <DependentUpon>CatalogoMusica.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CapaUsuarios\CatalogoMusica.aspx.designer.cs">
+    <Compile Include="CapaUsuarios\Admin\CatalogoMusica.aspx.designer.cs">
       <DependentUpon>CatalogoMusica.aspx</DependentUpon>
     </Compile>
-    <Compile Include="CapaUsuarios\CatalogoNoticias.aspx.cs">
+    <Compile Include="CapaUsuarios\Admin\CatalogoNoticias.aspx.cs">
       <DependentUpon>CatalogoNoticias.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CapaUsuarios\CatalogoNoticias.aspx.designer.cs">
+    <Compile Include="CapaUsuarios\Admin\CatalogoNoticias.aspx.designer.cs">
       <DependentUpon>CatalogoNoticias.aspx</DependentUpon>
     </Compile>
-    <Compile Include="CapaUsuarios\CatalogoVinculos.aspx.cs">
+    <Compile Include="CapaUsuarios\Admin\CatalogoVinculos.aspx.cs">
       <DependentUpon>CatalogoVinculos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CapaUsuarios\CatalogoVinculos.aspx.designer.cs">
+    <Compile Include="CapaUsuarios\Admin\CatalogoVinculos.aspx.designer.cs">
       <DependentUpon>CatalogoVinculos.aspx</DependentUpon>
     </Compile>
     <Compile Include="CapaUsuarios\Evento.aspx.cs">
