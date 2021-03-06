@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Xml.Linq;
 
 namespace ProyectoWebBanda.CapaUsuarios
 {
@@ -30,6 +31,26 @@ namespace ProyectoWebBanda.CapaUsuarios
             objConectar.insertar(ref objEven);
             gvEventos.DataSource = objConectar.mMostrarEventos();
             gvEventos.DataBind();
+
+
+            //Cargamos el archivo en el que se agrego el codigo xml con el comando "Load"
+            XDocument file = XDocument.Load(@"C:\Users\zaval\Documents\1 - OCTAVO SEMESTRE\PRO.WEB 2\U 1\ProyectoWebBanda\ProyectoWebBanda\XMLs\Eventos.xml");
+            XElement nodoRaiz = new XElement("evento");
+           //Se agrega un nuevo elemento al nodo raiz
+            file.Element("eventos").Add(nodoRaiz);
+
+            //generamos un nuevo elemento llamado "datos" y agregamos los datos ingresados a las cajas de texto
+            XElement datos = new XElement("datos");
+            datos.Add(new XElement("Nombre", txtNombre.Text));
+            datos.Add(new XElement("Fecha", txtFecha.Text));
+            datos.Add(new XElement("Ubicacion", txtUbicacion.Text));
+            datos.Add(new XElement("Link", txtLink.Text));
+            //Agregamos los datos al nodo raiz
+            nodoRaiz.Add(datos);
+
+            //Se guardan los datos en el archivo xml y se ingresa un mensaje en la etiqueta diciendo que el xml se generó
+            file.Save(@"C:\Users\zaval\Documents\1 - OCTAVO SEMESTRE\PRO.WEB 2\U 1\ProyectoWebBanda\ProyectoWebBanda\XMLs\Eventos.xml");
+            lblNotifu.Text = "Xml Generado";
         }
 
         protected void btnEliminar_Click(object sender, EventArgs e)
@@ -49,6 +70,9 @@ namespace ProyectoWebBanda.CapaUsuarios
                     lblNotifu.Text = "Algo Salio Mal";
                 }
             }
+
+
+
         }
 
         protected void btnCargar_Click(object sender, EventArgs e)
