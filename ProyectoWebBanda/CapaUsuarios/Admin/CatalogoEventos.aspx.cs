@@ -72,7 +72,6 @@ namespace ProyectoWebBanda.CapaUsuarios
             }
 
 
-
         }
 
         protected void btnCargar_Click(object sender, EventArgs e)
