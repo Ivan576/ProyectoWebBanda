@@ -7,8 +7,8 @@ namespace ProyectoWebBanda.CapaNegocios
 {
     public class Noticia
     {
-        public int idNoticia {get;set};
-        public String titulo {get;set;};
+        public int idNoticia { get; set; }
+        public String titulo {get;set;}
         public String resumen {get;set;}
         public String contenido{get;set;} 
         public DateTime fecha {get;set;}

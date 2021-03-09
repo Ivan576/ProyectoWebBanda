@@ -23,7 +23,7 @@
         <asp:Label ID="Label4" runat="server" Text="Link"></asp:Label>
         <asp:TextBox ID="txtLink" runat="server" style="margin-left: 7px" Width="276px"></asp:TextBox>
         <p>
-            <asp:Button ID="btnAgregarEvento" runat="server" OnClick="btnAgregarEvento_Click" style="margin-left: 32px" Text="Agregar" Width="65px" />
+            <asp:Button ID="btnAgregarEvento" runat="server" OnClick="btnAgregarEvento_Click" style="margin-left: 17px" Text="Agregar" Width="65px" />
             <asp:Button ID="btnEditar" runat="server" OnClick="btnEditar_Click" style="margin-left: 23px" Text="Editar" />
             <asp:Button ID="btnEliminar" runat="server" OnClick="btnEliminar_Click" style="margin-left: 25px" Text="Eliminar" />
         </p>

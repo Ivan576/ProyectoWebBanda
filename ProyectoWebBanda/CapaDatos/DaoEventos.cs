@@ -26,7 +26,8 @@ namespace ProyectoWebBanda.CapaDatos
 
 
         //METODO PARA INSERTAR UN NUEVO EVENTO A LA BASE DE DATOS
-        public void insertar(ref Evento objeven)
+        //METODO PARA INSERTAR UN NUEVO EVENTO A LA BASE DE DATOS
+        public long insertar(ref Evento objeven)
         {
             //SE LLAMA LA CONEXION
             conexion();
@@ -37,7 +38,7 @@ namespace ProyectoWebBanda.CapaDatos
                 string sql = "Insert into Evento (nombre,fecha,ubicacion,linkEvento)values('" + objeven.Nombre + "','" + objeven.Fecha + "','" + objeven.Ubicacion + "','" + objeven.LinkEvento + "')";
                 comman = new MySqlCommand(sql, conex);
                 comman.ExecuteNonQuery();
-
+                return comman.LastInsertedId;
             }
             catch (Exception)
             {
@@ -50,6 +51,7 @@ namespace ProyectoWebBanda.CapaDatos
                 conex.Close();
                 conex.Dispose();
             }
+            return -1;
         }
 
         //METODO PARA OBTENER TODOS LOS EVENTOS DE LA BASE DE DATOS

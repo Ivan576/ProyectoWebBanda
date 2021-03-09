@@ -10,7 +10,7 @@ namespace ProyectoWebBanda.CapaNegocios
      * */
     public class Vinculo
     {
-        public int idVinculo{get;set};
+        public int idVinculo{ get; set; }
         public string nombreVinculo{get;set;}
         public string imagen{get;set;}
 
