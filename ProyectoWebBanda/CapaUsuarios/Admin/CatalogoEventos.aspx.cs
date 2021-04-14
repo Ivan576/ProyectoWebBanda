@@ -35,7 +35,7 @@ namespace ProyectoWebBanda.CapaUsuarios
 
 
             //Cargamos el archivo en el que se agrego el codigo xml con el comando "Load"
-            XDocument file = XDocument.Load(@"C:\Users\zaval\Documents\1 - OCTAVO SEMESTRE\PRO.WEB 2\U 1\ProyectoWebBanda\ProyectoWebBanda\XMLs\Eventos.xml");
+            XDocument file = XDocument.Load(@"e:\documento.xml");
             XElement nodoRaiz = new XElement("evento");
            //Se agrega un nuevo elemento al nodo raiz
             file.Element("eventos").Add(nodoRaiz);
@@ -51,7 +51,7 @@ namespace ProyectoWebBanda.CapaUsuarios
             nodoRaiz.Add(datos);
 
             //Se guardan los datos en el archivo xml y se ingresa un mensaje en la etiqueta diciendo que el xml se generó
-            file.Save(@"C:\Users\zaval\Documents\1 - OCTAVO SEMESTRE\PRO.WEB 2\U 1\ProyectoWebBanda\ProyectoWebBanda\XMLs\Eventos.xml");
+            file.Save(@"e:\documento.xml");
             lblNotifu.Text = "Xml Generado";
         }
 
@@ -75,7 +75,7 @@ namespace ProyectoWebBanda.CapaUsuarios
 
 
             XmlDocument file = new XmlDocument();
-            file.Load(@"C:\Users\zaval\Documents\1 - OCTAVO SEMESTRE\PRO.WEB 2\U 1\ProyectoWebBanda\ProyectoWebBanda\XMLs\Eventos.xml");
+            file.Load(@"e:\documento.xml");
 
             XmlNode eventos = file.DocumentElement;
             XmlNodeList IdsEvents = file.SelectNodes("eventos/evento");
@@ -91,7 +91,7 @@ namespace ProyectoWebBanda.CapaUsuarios
             }
 
 
-            file.Save(@"C:\Users\zaval\Documents\1 - OCTAVO SEMESTRE\PRO.WEB 2\U 1\ProyectoWebBanda\ProyectoWebBanda\XMLs\Eventos.xml");
+            file.Save(@"e:\documento.xml");
             lblNotifu.Text = "Se elimino correctamente";
 
 
@@ -144,7 +144,7 @@ namespace ProyectoWebBanda.CapaUsuarios
 
             //XML Editar
             XmlDocument document = new XmlDocument();
-            document.Load(@"C:\Users\zaval\Documents\1 - OCTAVO SEMESTRE\PRO.WEB 2\U 1\ProyectoWebBanda\ProyectoWebBanda\XMLs\Eventos.xml");
+            document.Load(@"e:\documento.xml");
 
             XmlNode node;
             node = document.DocumentElement;
@@ -159,7 +159,7 @@ namespace ProyectoWebBanda.CapaUsuarios
                     item.ChildNodes[0].ChildNodes[3].InnerText = txtUbicacion.Text;
                     item.ChildNodes[0].ChildNodes[4].InnerText = txtLink.Text;
                     
-                    document.Save(@"C:\Users\zaval\Documents\1 - OCTAVO SEMESTRE\PRO.WEB 2\U 1\ProyectoWebBanda\ProyectoWebBanda\XMLs\Eventos.xml");
+                    document.Save(@"e:\documento.xml");
                     lblNotifu.Text = "evento modificada";
                     break;
                 }
