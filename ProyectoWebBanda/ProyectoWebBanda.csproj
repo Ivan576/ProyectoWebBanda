@@ -132,6 +132,7 @@
     <Content Include="Recursos\Imagenes\Fotos\carousel3.jpg" />
     <Content Include="Recursos\Imagenes\Fotos\carousel4.jpg" />
     <Content Include="Recursos\Imagenes\Fotos\carousel5.jpg" />
+    <Content Include="Recursos\Imagenes\Fotos\Ajax.png" />
     <Content Include="Recursos\Imagenes\Logos\120millas logo.png" />
     <Content Include="Recursos\Imagenes\Portadas\AmorEnDesamor.PNG" />
     <Content Include="Web.config" />
