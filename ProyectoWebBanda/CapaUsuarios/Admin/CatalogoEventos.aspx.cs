@@ -142,7 +142,7 @@ namespace ProyectoWebBanda.CapaUsuarios
 
 
 
-            //XML
+            //XML Editar
             XmlDocument document = new XmlDocument();
             document.Load(@"C:\Users\zaval\Documents\1 - OCTAVO SEMESTRE\PRO.WEB 2\U 1\ProyectoWebBanda\ProyectoWebBanda\XMLs\Eventos.xml");
 
