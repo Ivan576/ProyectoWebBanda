@@ -137,6 +137,7 @@
     <Content Include="Recursos\Imagenes\Portadas\AmorEnDesamor.PNG" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
+    <Content Include="XMLs\documento.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CapaDatos\DaoAbstracto.cs" />
@@ -266,9 +267,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="XMLs\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

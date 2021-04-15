@@ -14,6 +14,8 @@ namespace ProyectoWebBanda.CapaUsuarios
     public partial class CatalogoEventos : System.Web.UI.Page
     {
 
+        String path = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\ProyectoWebBanda\xml\documento.xml");
+
         DaoEventos objConectar = new DaoEventos();
         Evento objEven;
         protected void Page_Load(object sender, EventArgs e)
@@ -35,7 +37,7 @@ namespace ProyectoWebBanda.CapaUsuarios
 
 
             //Cargamos el archivo en el que se agrego el codigo xml con el comando "Load"
-            XDocument file = XDocument.Load(@"C:\documento.xml");
+            XDocument file = XDocument.Load(path);
             XElement nodoRaiz = new XElement("evento");
            //Se agrega un nuevo elemento al nodo raiz
             file.Element("eventos").Add(nodoRaiz);
@@ -75,7 +77,7 @@ namespace ProyectoWebBanda.CapaUsuarios
 
 
             XmlDocument file = new XmlDocument();
-            file.Load(@"C:\documento.xml");
+            file.Load(path);
 
             XmlNode eventos = file.DocumentElement;
             XmlNodeList IdsEvents = file.SelectNodes("eventos/evento");
@@ -144,7 +146,7 @@ namespace ProyectoWebBanda.CapaUsuarios
 
             //XML Editar
             XmlDocument document = new XmlDocument();
-            document.Load(@"C:\documento.xml");
+            document.Load(path);
 
             XmlNode node;
             node = document.DocumentElement;
