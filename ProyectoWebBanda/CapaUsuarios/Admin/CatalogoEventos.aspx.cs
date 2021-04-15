@@ -14,7 +14,7 @@ namespace ProyectoWebBanda.CapaUsuarios
     public partial class CatalogoEventos : System.Web.UI.Page
     {
 
-        String path = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\ProyectoWebBanda\xml\documento.xml");
+        String path = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\ProyectoWebBanda\XMLs\documento.xml");
 
         DaoEventos objConectar = new DaoEventos();
         Evento objEven;
@@ -53,7 +53,7 @@ namespace ProyectoWebBanda.CapaUsuarios
             nodoRaiz.Add(datos);
 
             //Se guardan los datos en el archivo xml y se ingresa un mensaje en la etiqueta diciendo que el xml se generó
-            file.Save(@"C:\documento.xml");
+            file.Save(path);
             lblNotifu.Text = "Xml Generado";
         }
 
@@ -93,7 +93,7 @@ namespace ProyectoWebBanda.CapaUsuarios
             }
 
 
-            file.Save(@"C:\documento.xml");
+            file.Save(path);
             lblNotifu.Text = "Se elimino correctamente";
 
 
@@ -161,7 +161,7 @@ namespace ProyectoWebBanda.CapaUsuarios
                     item.ChildNodes[0].ChildNodes[3].InnerText = txtUbicacion.Text;
                     item.ChildNodes[0].ChildNodes[4].InnerText = txtLink.Text;
                     
-                    document.Save(@"C:\documento.xml");
+                    document.Save(path);
                     lblNotifu.Text = "evento modificada";
                     break;
                 }
