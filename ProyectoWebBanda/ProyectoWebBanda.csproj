@@ -119,6 +119,7 @@
     <Content Include="CapaUsuarios\Admin\CatalogoMultimedia.aspx" />
     <Content Include="CapaUsuarios\Admin\CatalogoNoticias.aspx" />
     <Content Include="CapaUsuarios\Admin\CatalogoVinculos.aspx" />
+    <Content Include="CapaUsuarios\Ajax.aspx" />
     <Content Include="CapaUsuarios\CSS\MainMenu.css" />
     <Content Include="CapaUsuarios\Evento.aspx" />
     <Content Include="CapaUsuarios\InicioSesion.aspx" />
@@ -127,6 +128,8 @@
     <Content Include="CapaUsuarios\Multimedia.aspx" />
     <Content Include="CapaUsuarios\Musica.aspx" />
     <Content Include="CapaUsuarios\Noticia.aspx" />
+    <Content Include="Recursos\Imagenes\Ajax\1426.jpg" />
+    <Content Include="Recursos\Imagenes\Ajax\i.png" />
     <Content Include="Recursos\Imagenes\Fotos\carousel1.jpg" />
     <Content Include="Recursos\Imagenes\Fotos\carousel2.jpg" />
     <Content Include="Recursos\Imagenes\Fotos\carousel3.jpg" />
@@ -199,6 +202,13 @@
     </Compile>
     <Compile Include="CapaUsuarios\Admin\CatalogoVinculos.aspx.designer.cs">
       <DependentUpon>CatalogoVinculos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaUsuarios\Ajax.aspx.cs">
+      <DependentUpon>Ajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaUsuarios\Ajax.aspx.designer.cs">
+      <DependentUpon>Ajax.aspx</DependentUpon>
     </Compile>
     <Compile Include="CapaUsuarios\Evento.aspx.cs">
       <DependentUpon>Evento.aspx</DependentUpon>
