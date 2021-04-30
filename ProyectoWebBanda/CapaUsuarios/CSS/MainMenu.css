@@ -1,4 +1,9 @@
-﻿/* Estilo del header */
+﻿*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo del header */
 
 body {
     margin: 0;
@@ -15,7 +20,7 @@ a {
 .header {
     background-color: #fff;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-    position: fixed;
+    position: relative;
     width: 100%;
     z-index: 3;
 }
@@ -33,6 +38,7 @@ a {
         padding: 20px 20px;
         border-right: 1px solid #f4f4f4;
         text-decoration: none;
+        color: black;
     }
 
         .header li a:hover,
@@ -108,7 +114,7 @@ a {
     }
 
         .header .menu-btn:checked ~ .menu {
-            max-height: 240px;
+            max-height: 260px;
         }
 
         .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -130,7 +136,7 @@ a {
 
 /* 48em = 768px */
 
-@media (min-width: 48em) {
+@media (min-width: 768px) {
     .header li {
         float: left;
     }
@@ -142,38 +148,90 @@ a {
     .header .menu {
         clear: none;
         float: right;
-       max-height: none;
+        max-height: none;
     }
 
     .header .menu-icon {
         display: none;
     }
+
+    /* Fin estilo Header */
+
+    .discSection {
+        height: 900px;
+        background-image: url('../../Recursos/Imagenes/Portadas/AmorEnDesamorFondo.PNG');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        text-align: center;
+
+        position: relative;
+    }
+
+    .discInfoContainer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 512px;
+        width: 512px;
+    }
+
+    .imageDisc {
+        position: static;
+        margin: auto;
+        min-height: 512px;
+        max-width: 512px;
+        background-image: url('../../Recursos/Imagenes/Portadas/AmorEnDesamor.PNG');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+        margin-bottom: 40px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+        animation-name: rotateBack;
+        animation-duration: 100ms;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
+        .imageDisc:hover {
+            animation-name: rotateFront;
+            animation-duration: 100ms;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+        }
+
+    @keyframes rotateFront {
+        from {
+            transform: rotate(0deg);
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+            width: 512px;
+            height: 512px;
+        }
+        to {
+            transform: rotate(-5deg);
+            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+            width: 520px;
+            height: 520px;
+        }
+    }
+
+    @keyframes rotateBack {
+        from {
+            transform: rotate(-5deg);
+            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+            width: 520px;
+            height: 520px;
+        }
+        to {
+            transform: rotate(0deg);
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+            width: 512px;
+            height: 512px;
+        }
+    }
 }
 
-.container {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    border: 3px solid green;
-}
 
-.vertical-center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-/* Fin estilo header */
-
-
-body {
-    padding: 0;
-    margin: 0;
-}
-
-.mainView {
-    height: 100vh;
-    width: auto;
-}
