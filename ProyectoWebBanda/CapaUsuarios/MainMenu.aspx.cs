@@ -11,7 +11,7 @@ namespace ProyectoWebBanda.CapaUsuarios
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            dateOne.InnerHtml = "22-02-2020";
         }
     }
 }
