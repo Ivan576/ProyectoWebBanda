@@ -82,6 +82,8 @@
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -135,6 +137,22 @@
     <Content Include="CapaUsuarios\Multimedia.aspx" />
     <Content Include="CapaUsuarios\Musica.aspx" />
     <Content Include="CapaUsuarios\Noticia.aspx" />
+    <Content Include="Connected Services\ServiceReference1\ProyectoWebBanda.ServiceReference1.Cancion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference1\ProyectoWebBanda.ServiceReference1.HelloWorldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference1\ProyectoWebBanda.ServiceReference1.ObtenerCancionesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ServiceReference1\ServiceDB.disco" />
+    <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Recursos\Imagenes\Ajax\1426.jpg" />
     <Content Include="Recursos\Imagenes\Ajax\i.png" />
     <Content Include="Recursos\Imagenes\Fotos\carousel1.jpg" />
@@ -146,6 +164,7 @@
     <Content Include="Recursos\Imagenes\Logos\120millas logo.png" />
     <Content Include="Recursos\Imagenes\Portadas\AmorEnDesamor.PNG" />
     <Content Include="Recursos\Imagenes\Portadas\AmorEnDesamorFondo.PNG" />
+    <Content Include="ServiceDB.asmx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="XMLs\documento.xml" />
@@ -153,6 +172,7 @@
   <ItemGroup>
     <Compile Include="CapaDatos\DaoAbstracto.cs" />
     <Compile Include="CapaDatos\DaoAlbum.cs" />
+    <Compile Include="CapaDatos\DaoCancion.cs" />
     <Compile Include="CapaDatos\DaoConexion.cs" />
     <Compile Include="CapaDatos\DaoEventos.cs" />
     <Compile Include="CapaDatos\DaoNoticias.cs" />
@@ -274,7 +294,16 @@
     <Compile Include="CapaUsuarios\Noticia.aspx.designer.cs">
       <DependentUpon>Noticia.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceDB.asmx.cs">
+      <DependentUpon>ServiceDB.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -284,6 +313,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\ServiceReference1\ServiceDB.wsdl" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -292,7 +322,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
