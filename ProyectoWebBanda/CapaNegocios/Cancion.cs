@@ -24,5 +24,11 @@ namespace ProyectoWebBanda.CapaNegocios
             this.idAlbum = idAlbum;
             this.idPlataforma = idPlataforma;
         }
+
+        public Cancion(int idCancion)
+        {
+            this.idCancion = idCancion;
+        }
+
     }
 }

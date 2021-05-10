@@ -26,6 +26,7 @@ namespace ProyectoWebBanda.CapaUsuarios
 
         protected void btnAgregarEvento_Click(object sender, EventArgs e)
         {
+            //DataBase
             string Nombre = txtNombre.Text.ToString();
             string Fecha = txtFecha.Text.ToString();
             string Ubicacion = txtUbicacion.Text.ToString();
@@ -36,6 +37,7 @@ namespace ProyectoWebBanda.CapaUsuarios
             gvEventos.DataBind();
 
 
+            // XML
             //Cargamos el archivo en el que se agrego el codigo xml con el comando "Load"
             XDocument file = XDocument.Load(path);
             XElement nodoRaiz = new XElement("evento");
