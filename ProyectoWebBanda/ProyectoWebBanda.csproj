@@ -113,6 +113,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CapaUsuarios\Admin\AdminLogin.aspx" />
+    <Content Include="CapaUsuarios\Admin\AdminMainMenu.aspx" />
     <Content Include="CapaUsuarios\Admin\CatalogoAlbum.aspx" />
     <Content Include="CapaUsuarios\Admin\CatalogoCanciones.aspx" />
     <Content Include="CapaUsuarios\Admin\CatalogoEventos.aspx" />
@@ -155,7 +156,7 @@
     <Compile Include="CapaDatos\DaoConexion.cs" />
     <Compile Include="CapaDatos\DaoEventos.cs" />
     <Compile Include="CapaDatos\DaoNoticias.cs" />
-    <Compile Include="CapaNegocios\Admin.cs" />
+    <Compile Include="CapaNegocios\AdminObjeto.cs" />
     <Compile Include="CapaNegocios\Album.cs" />
     <Compile Include="CapaNegocios\Cancion.cs" />
     <Compile Include="CapaNegocios\Evento.cs" />
@@ -167,6 +168,13 @@
     </Compile>
     <Compile Include="CapaUsuarios\Admin\AdminLogin.aspx.designer.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CapaUsuarios\Admin\AdminMainMenu.aspx.cs">
+      <DependentUpon>AdminMainMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CapaUsuarios\Admin\AdminMainMenu.aspx.designer.cs">
+      <DependentUpon>AdminMainMenu.aspx</DependentUpon>
     </Compile>
     <Compile Include="CapaUsuarios\Admin\CatalogoAlbum.aspx.cs">
       <DependentUpon>CatalogoAlbum.aspx</DependentUpon>
