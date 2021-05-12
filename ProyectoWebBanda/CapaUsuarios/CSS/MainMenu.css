@@ -1,13 +1,4 @@
-﻿
-
-.center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.discSection {
+﻿.discSection {
     min-height: 650px;
     height: 100vh;
     padding: 40px 0 40px 0;
@@ -17,7 +8,6 @@
     background-size: cover;
     color: white;
     text-align: center;
-    position: relative;
 }
 
 .discInfoContainer {
@@ -46,31 +36,10 @@
     }
 
 .eventSection {
-    position: relative;
-    text-align: center;
     height: 100vh;
     background: rgb(209,209,209);
     background: linear-gradient(0deg, rgba(209,209,209,1) 0%, rgba(255,255,255,1) 100%);
 }
-
-    .eventSection button {
-        padding: 18px 32px;
-        font-size: 16px;
-        border: 0px;
-        background-color: #58333E;
-        border-radius: 10px;
-        color: white;
-        -webkit-box-shadow: 0px 4px 4px 0px rgba(88,51,62,1);
-        -moz-box-shadow: 0px 4px 4px 0px rgba(88,51,62,1);
-        box-shadow: 0px 4px 4px 0px rgba(88,51,62,1);
-        transition: 0.3s;
-    }
-
-        .eventSection button:hover {
-            -webkit-box-shadow: 10px 10px 30px 0px rgba(88,51,62,1);
-            -moz-box-shadow: 10px 10px 30px 0px rgba(88,51,62,1);
-            box-shadow: 10px 10px 30px 0px rgba(88,51,62,1);
-        }
 
 .eventTable {
     width: 60vw;
@@ -96,4 +65,36 @@
         color: #58333E;
     }
 
+.socialMedia {
+    background-color: #5E3666;
+    width: 100vw;
+    padding: 200px 0;
+    height: auto;
+}
 
+    .socialMedia .facebookImg {
+        height: 200px;
+        width: 200px;
+        background-image: url(../../Recursos/Imagenes/Logos/facebookBlanco.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .socialMedia .instagramImg {
+        height: 200px;
+        width: 200px;
+        background-image: url(../../Recursos/Imagenes/Logos/instagramBlanco.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .socialMedia .youtubeImg {
+        height: 200px;
+        width: 200px;
+        background-image: url(../../Recursos/Imagenes/Logos/youtubebLANCO.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }

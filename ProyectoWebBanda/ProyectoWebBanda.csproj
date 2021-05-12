@@ -143,6 +143,9 @@
     <Content Include="Recursos\Imagenes\Fotos\carousel5.jpg" />
     <Content Include="Recursos\Imagenes\Fotos\Ajax.png" />
     <Content Include="Recursos\Imagenes\Logos\120millas logo.png" />
+    <Content Include="Recursos\Imagenes\Logos\facebookBlanco.png" />
+    <Content Include="Recursos\Imagenes\Logos\instagramBlanco.png" />
+    <Content Include="Recursos\Imagenes\Logos\youtubebLANCO.png" />
     <Content Include="Recursos\Imagenes\Portadas\AmorEnDesamor.PNG" />
     <Content Include="Recursos\Imagenes\Portadas\AmorEnDesamorFondo.PNG" />
     <Content Include="Web.config" />

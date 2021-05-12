@@ -34,6 +34,7 @@ a {
         border-right: 1px solid #f4f4f4;
         text-decoration: none;
         color: black;
+        transition: 0.3s;
     }
 
         .header li a:hover,

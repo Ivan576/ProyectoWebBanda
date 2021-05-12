@@ -13,5 +13,10 @@ namespace ProyectoWebBanda.CapaUsuarios
         {
             dateOne.InnerHtml = "22-02-2020";
         }
+
+        protected void btnDates_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Evento.aspx",true);
+        }
     }
 }

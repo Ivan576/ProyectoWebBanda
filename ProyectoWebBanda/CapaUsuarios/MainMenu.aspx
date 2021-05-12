@@ -25,79 +25,98 @@
     <title></title>
 </head>
 <body>
-    <div class="header">
-        <a class="logo">
-            <img src="../Recursos/Imagenes/Logos/120millas logo.png" />
-        </a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-            <li><a href="#work">Música</a></li>
-            <li><a href="#about">Eventos</a></li>
-            <li><a href="#careers">Noticias</a></li>
-            <li><a href="#contact">Multimedia</a></li>
-        </ul>
-    </div>
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="../Recursos/Imagenes/Fotos/carousel1.jpg" class="d-block w-100" alt="...">
+    <form id="form1" runat="server">
+        <div>
+            <div class="header">
+                <a class="logo">
+                    <img src="../Recursos/Imagenes/Logos/120millas logo.png" />
+                </a>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="#work">Música</a></li>
+                    <li><a href="#about">Eventos</a></li>
+                    <li><a href="#careers">Noticias</a></li>
+                    <li><a href="#contact">Multimedia</a></li>
+                </ul>
             </div>
-            <div class="carousel-item">
-                <img src="../Recursos/Imagenes/Fotos/carousel2.jpg" class="d-block w-100" alt="...">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../Recursos/Imagenes/Fotos/carousel1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Recursos/Imagenes/Fotos/carousel2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Recursos/Imagenes/Fotos/carousel3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Recursos/Imagenes/Fotos/carousel4.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../Recursos/Imagenes/Fotos/carousel5.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="../Recursos/Imagenes/Fotos/carousel3.jpg" class="d-block w-100" alt="...">
+            <div class="discSection parentCenter">
+                <div class="discInfoContainer childCenter">
+                    <a href="#">
+                        <div class="imageDisc"></div>
+                    </a>
+                    <h2>Amor en desamor</h2>
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="../Recursos/Imagenes/Fotos/carousel4.jpg" class="d-block w-100" alt="...">
+            <div class="eventSection parentCenter">
+                <div class="childCenter">
+                    <h1>Eventos</h1>
+                    <table class="eventTable">
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Nombre</th>
+                            <th>Ubicación</th>
+                            <th>Link</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span id="dateOne" runat="server"></span>
+                            </td>
+                            <td class="rowName">
+                                <span id="nameOne" runat="server"></span>
+                            </td>
+                            <td>
+                                <span id="placeOne" runat="server"></span>
+                            </td>
+                            <td><a id="linkOne" href="#" runat="server">www.cupuato.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>05/05/2021</td>
+                            <td class="rowName">Cupuato Fest</td>
+                            <td>Cupuato</td>
+                            <td><a href="#">www.cupuato.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>05/05/2021</td>
+                            <td class="rowName">Cupuato Fest</td>
+                            <td>Cupuato</td>
+                            <td><a href="#">www.cupuato.com</a></td>
+                        </tr>
+                    </table>
+                    <button id="btnDates" class="brownButton" type="button" runat="server" onserverclick="btnDates_Click">Más fechas</button>
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="../Recursos/Imagenes/Fotos/carousel5.jpg" class="d-block w-100" alt="...">
+            <div class="socialMedia row align-items-center">
+                <div class="col-4 col-md-4 col-sm-12 parentCenter">
+                    <div class="facebookImg childCenter"></div>
+                </div>
+                <div class="col-4 col-md-4 col-sm-12 parentCenter">
+                    <div class="instagramImg childCenter"></div>
+                </div>
+                <div class="col-4 col-md-4 col-sm-12  parentCenter">
+                    <div class="youtubeImg childCenter"></div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class ="discSection">
-        <div class="discInfoContainer center">
-            <a href="#">
-                <div class="imageDisc"></div>
-            </a>
-            <h2>Amor en desamor</h2>
-        </div>
-    </div>
-    <div class="eventSection">
-        <div class="center">
-            <h1>Eventos</h1>
-            <table class="eventTable">
-                <tr>
-                    <th>Fecha</th>
-                    <th>Nombre</th>
-                    <th>Ubicación</th>
-                    <th>Link</th>
-                </tr>
-                <tr>
-                    <td>
-                        <span id="dateOne" runat="server"></span>
-                    </td>
-                    <td class="rowName">Cupuato Fest</td>
-                    <td>Cupuato</td>
-                    <td><a href="#">www.cupuato.com</a></td>
-                </tr>
-                <tr>
-                    <td>05/05/2021</td>
-                    <td class="rowName">Cupuato Fest</td>
-                    <td>Cupuato</td>
-                    <td><a href="#">www.cupuato.com</a></td>
-                </tr>
-                <tr>
-                    <td>05/05/2021</td>
-                    <td class="rowName">Cupuato Fest</td>
-                    <td>Cupuato</td>
-                    <td><a href="#">www.cupuato.com</a></td>
-                </tr>
-            </table>
-            <button type="button">Más fechas</button>
-        </div>
-    </div>
+    </form>
 </body>
 </html>

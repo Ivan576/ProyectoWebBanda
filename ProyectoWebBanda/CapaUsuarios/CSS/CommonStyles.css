@@ -49,3 +49,35 @@ h5 {
 small, .text_small {
     font-size: 0.8rem;
 }
+
+.parentCenter {
+    position: relative;
+    text-align: center;
+}
+
+.childCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.brownButton {
+    border: 0;
+    padding: 18px 32px;
+    font-size: 16px;
+    border: 0px;
+    background-color: #58333E;
+    border-radius: 15px;
+    color: white;
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(88,51,62,1);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(88,51,62,1);
+    box-shadow: 0px 4px 4px 0px rgba(88,51,62,1);
+    transition: 0.3s;
+}
+
+    .brownButton:hover {
+        -webkit-box-shadow: 10px 10px 30px 0px rgba(88,51,62,1);
+        -moz-box-shadow: 10px 10px 30px 0px rgba(88,51,62,1);
+        box-shadow: 10px 10px 30px 0px rgba(88,51,62,1);
+    }
