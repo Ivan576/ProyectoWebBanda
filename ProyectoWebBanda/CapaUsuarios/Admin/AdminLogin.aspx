@@ -21,7 +21,7 @@
         <asp:Label ID="lblPasword" runat="server" Text="Password"></asp:Label>
         <asp:TextBox ID="txtPassword" runat="server" OnTextChanged="txtPassword_TextChanged" TextMode="Password">password</asp:TextBox>
         <p>
-            <asp:Button ID="btnLog" runat="server" Text="Log" />
+            <asp:Button ID="btnLog" runat="server" Text="Log" OnClick="btnLog_Click" style="height: 26px" />
         </p>
     </form>
 </body>
