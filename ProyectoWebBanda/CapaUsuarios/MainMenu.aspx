@@ -116,7 +116,41 @@
                     <div class="youtubeImg childCenter"></div>
                 </div>
             </div>
+            <div class="eventSection parentCenter">
+                <div class="childCenter">
+                    <h1>Top Canciones</h1>
+                    <table class="eventTable">
+                        <tr>
+                            <th></th>
+                            <th>Nombre</th>
+                            <th>Album</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td id="imageDisc1"></td>
+                            <td><span id="nameSong1" runat="server"></span></td>
+                            <td><span id="discSong1" runat="server"></span></td>
+                            <td><button id="btnSong1" class="brownButton" type="button" onclick="button1()">Escuchar</button></td>
+                        </tr>
+
+                        <tr>
+                            <td id="imageDisc2"></td>
+                            <td><span id="nameSong2" runat="server"></span></td>
+                            <td><span id="discSong2" runat="server"></span></td>
+                            <td><button id="btnSong2" class="brownButton" type="button" onclick="button2()">Escuchar</button></td>
+                        </tr>
+
+                        <tr>
+                            <td id="imageDisc3"></td>
+                            <td><span id="nameSong3" runat="server"></span></td>
+                            <td><span id="discSong3" runat="server"></span></td>
+                            <td><button id="btnSong3" class="brownButton" type="button" onclick="button3()">Escuchar</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
     </form>
+    <script src="JavaScript/MenuPrincipal.js"></script>
 </body>
 </html>

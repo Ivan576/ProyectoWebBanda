@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using SpotifyAPI.Web;
+
 
 namespace ProyectoWebBanda.CapaUsuarios
 {
@@ -18,5 +20,7 @@ namespace ProyectoWebBanda.CapaUsuarios
         {
             Response.Redirect("Evento.aspx",true);
         }
+
+        
     }
 }

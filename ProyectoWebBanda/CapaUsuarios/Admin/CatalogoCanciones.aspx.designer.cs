@@ -159,15 +159,6 @@ namespace ProyectoWebBanda.CapaUsuarios.Admin
         protected global::System.Web.UI.WebControls.Label lblNotify;
 
         /// <summary>
-        /// Control gvCanciones.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvCanciones;
-
-        /// <summary>
         /// Control Label7.
         /// </summary>
         /// <remarks>
@@ -193,5 +184,14 @@ namespace ProyectoWebBanda.CapaUsuarios.Admin
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnCargar;
+
+        /// <summary>
+        /// Control gvCanciones.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvCanciones;
     }
 }

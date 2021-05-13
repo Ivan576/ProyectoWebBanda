@@ -15,7 +15,7 @@ namespace ProyectoWebBanda.CapaDatos
         {
             try
             {
-                conex.ConnectionString = "server=localhost;database=web120M;user id =root;password=root1;";
+                conex.ConnectionString = "server=localhost;database=web120M;user id =root;password=root;";
                 conex.Open();
             }
             catch (Exception)
