@@ -26,6 +26,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <script src="JavaScript/MenuPrincipal.js"></script>
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
         <div>
             <div class="header">
                 <a class="logo">
@@ -65,6 +68,12 @@
                         <div class="imageDisc"></div>
                     </a>
                     <h2>Amor en desamor</h2>
+                    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                        <ContentTemplate>
+                            <button id="btnLike" class="brownButton" type="button" runat="server" onserverclick="btnLike_Click">Like</button>
+                            <span>❤️</span><span id="likes" runat="server">0</span>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
                 </div>
             </div>
             <div class="eventSection parentCenter">
@@ -151,6 +160,5 @@
             </div>
         </div>
     </form>
-    <script src="JavaScript/MenuPrincipal.js"></script>
-</body>
+    </body>
 </html>
