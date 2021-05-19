@@ -5,6 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="CSS/CommonStyles.css" />
+    <link rel="stylesheet" href="CSS/CommonHeader.css" />
     <link rel="stylesheet" href="CSS/Eventos.css" />
     <style>
         
@@ -29,5 +31,61 @@
             <li><a href="#contact">Multimedia</a></li>
         </ul>
     </div>
+
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                        <img src="../Recursos/Imagenes/Portadas/AmorEnDesamorFondo.PNG" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                        <img src="../Recursos/Imagenes/Fotos/carousel2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                        <img src="../Recursos/Imagenes/Fotos/carousel3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="eventSection parentCenter">
+                <div class="childCenter">
+                    <h1>Eventos</h1>
+                    <table class="eventTable">
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Nombre</th>
+                            <th>Ubicación</th>
+                            <th>Link</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span id="dateOne" runat="server"></span>
+                            </td>
+                            <td class="rowName">
+                                <span id="nameOne" runat="server"></span>
+                            </td>
+                            <td>
+                                <span id="placeOne" runat="server"></span>
+                            </td>
+                            <td><a id="linkOne" href="#" runat="server">www.cupuato.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>05/05/2021</td>
+                            <td class="rowName">Cupuato Fest</td>
+                            <td>Cupuato</td>
+                            <td><a href="#">www.cupuato.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>05/05/2021</td>
+                            <td class="rowName">Cupuato Fest</td>
+                            <td>Cupuato</td>
+                            <td><a href="#">www.cupuato.com</a></td>
+                        </tr>
+                    </table>
+                    <button id="btnDates">Más fechas</button>
+                </div>
+            </div>
+
 </body>
 </html>
