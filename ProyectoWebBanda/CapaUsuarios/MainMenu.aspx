@@ -158,6 +158,19 @@
                     </table>
                 </div>
             </div>
+            <footer class="footerMain parentCenter">
+                <div class="childCenter">
+                    <img class="footerLogo" src="../Recursos/Imagenes/Logos/120millas logo.png" />
+                    <div class="socialMediaFooter">
+                        <img class="instagramFooter" src="../Recursos/Imagenes/Logos/instagram.png" />
+                        <img class="facebookFooter" src="../Recursos/Imagenes/Logos/Facebook.png" />
+                        <img class="youtubeFooter" src="../Recursos/Imagenes/Logos/Youtube.png" />
+                    </div>
+                    <p>
+                        120 millas®, todos los derechos reservados.
+                    </p>
+                </div>
+            </footer>
         </div>
     </form>
     </body>

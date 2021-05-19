@@ -167,6 +167,7 @@
     <Content Include="Connected Services\ServiceReference1\ProyectoWebBanda.ServiceReference1.ObtenerCancionesResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Recursos\Imagenes\Logos\youtube.png" />
     <None Include="Connected Services\ServiceReference1\ServiceDB.disco" />
     <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
     <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
@@ -181,6 +182,8 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Recursos\Imagenes\Logos\facebook.png" />
+    <Content Include="Recursos\Imagenes\Logos\instagram.png" />
     <Content Include="Recursos\Imagenes\Ajax\1426.jpg" />
     <Content Include="Recursos\Imagenes\Ajax\i.png" />
     <Content Include="Recursos\Imagenes\Fotos\carousel1.jpg" />

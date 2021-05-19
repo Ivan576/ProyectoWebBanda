@@ -11,10 +11,9 @@ namespace ProyectoWebBanda.CapaUsuarios
 {
     public partial class MainMenu : System.Web.UI.Page
     {
-        ServiceReference2.CalculatorSoapClient calculatorSoap;
         protected void Page_Load(object sender, EventArgs e)
         {
-            dateOne.InnerHtml = "22-02-2020";
+            dateOne.InnerHtml = "El Juaco";
             calculatorSoap = new ServiceReference2.CalculatorSoapClient();
         }
 
@@ -30,6 +29,12 @@ namespace ProyectoWebBanda.CapaUsuarios
             likes.InnerText = cant + "";
         }
 
+        // Se crea una instancia del cliente SOAP
+        ServiceReference2.CalculatorSoapClient calculatorSoap;
+        /*
+         * Obtiene el número de likes del span "Likes", posterior a esto le suma 1 y finalmente actualiza el valor en el Span.
+         * Esto sucede cuando se da clic en el botón "Like"
+         */
         protected void btnLike_Click1(object sender, EventArgs e)
         {
             int cant = int.Parse(likes.InnerText);
