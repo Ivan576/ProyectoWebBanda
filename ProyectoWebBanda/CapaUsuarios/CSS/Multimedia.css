@@ -14,7 +14,10 @@ body {
 a {
     color: #000;
 }
-
+/*video*/
+.video {
+    margin-top: 10%;
+}
 /* header */
 
 .header {
@@ -108,7 +111,7 @@ a {
             }
 
     /* menu btn */
-
+  
     .header .menu-btn {
         display: none;
     }

@@ -143,6 +143,7 @@
     <Content Include="CapaUsuarios\Ajax.aspx" />
     <Content Include="CapaUsuarios\CSS\CatalogoCanciones.css" />
     <Content Include="CapaUsuarios\CSS\CommonStyles.css" />
+    <Content Include="CapaUsuarios\CSS\estilos.css" />
     <Content Include="CapaUsuarios\CSS\Eventos.css" />
     <Content Include="CapaUsuarios\CSS\MainMenu.css" />
     <Content Include="CapaUsuarios\CSS\Multimedia.css" />
@@ -152,6 +153,7 @@
     <Content Include="CapaUsuarios\Evento.aspx" />
     <Content Include="CapaUsuarios\index.aspx" />
     <Content Include="CapaUsuarios\InicioSesion.aspx" />
+    <Content Include="CapaUsuarios\JavaScript\main.js" />
     <Content Include="CapaUsuarios\JavaScript\MenuPrincipal.js" />
     <Content Include="CapaUsuarios\MainMenu.aspx" />
     <Content Include="CapaUsuarios\MainMenuAdmin.aspx" />
@@ -167,6 +169,21 @@
     <Content Include="Connected Services\ServiceReference1\ProyectoWebBanda.ServiceReference1.ObtenerCancionesResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Recursos\Imagenes\ImagenesMultimedia\img-1.jpg" />
+    <Content Include="Recursos\Imagenes\ImagenesMultimedia\img-10.jpg" />
+    <Content Include="Recursos\Imagenes\ImagenesMultimedia\img-11.jpg" />
+    <Content Include="Recursos\Imagenes\ImagenesMultimedia\img-12.jpg" />
+    <Content Include="Recursos\Imagenes\ImagenesMultimedia\img-13.jpg" />
+    <Content Include="Recursos\Imagenes\ImagenesMultimedia\img-14.jpg" />
+    <Content Include="Recursos\Imagenes\ImagenesMultimedia\img-15.jpg" />
+    <Content Include="Recursos\Imagenes\ImagenesMultimedia\img-2.jpg" />
+    <Content Include="Recursos\Imagenes\ImagenesMultimedia\img-3.jpg" />
+    <Content Include="Recursos\Imagenes\ImagenesMultimedia\img-4.jpg" />
+    <Content Include="Recursos\Imagenes\ImagenesMultimedia\img-5.jpg" />
+    <Content Include="Recursos\Imagenes\ImagenesMultimedia\img-6.jpg" />
+    <Content Include="Recursos\Imagenes\ImagenesMultimedia\img-7.jpg" />
+    <Content Include="Recursos\Imagenes\ImagenesMultimedia\img-8.jpg" />
+    <Content Include="Recursos\Imagenes\ImagenesMultimedia\img-9.jpg" />
     <Content Include="Recursos\Imagenes\Logos\youtube.png" />
     <None Include="Connected Services\ServiceReference1\ServiceDB.disco" />
     <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
