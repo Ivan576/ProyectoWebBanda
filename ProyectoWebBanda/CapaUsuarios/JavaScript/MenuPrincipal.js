@@ -1,26 +1,40 @@
-﻿var imgDisc1 = document.getElementById('imageDisc1');
-var imgDisc2 = document.getElementById('imageDisc2');
-var imgDisc3 = document.getElementById('imageDisc3');
+﻿var imgDisc1;
+var imgDisc2;
+var imgDisc3;
 
-var nameSong1 = document.querySelector('#nameSong1');
-var nameSong2 = document.querySelector('#nameSong2');
-var nameSong3 = document.querySelector('#nameSong3');
+var nameSong1;
+var nameSong2;
+var nameSong3;
 
-var discSong1 = document.querySelector('#discSong1');
-var discSong2 = document.querySelector('#discSong2');
-var discSong3 = document.querySelector('#discSong3');
+var discSong1;
+var discSong2;
+var discSong3;
 
 var link1;
 var link2;
 var link3;
-
 // Espera a que cargue la pagina
 document.addEventListener(
     'DOMContentLoaded', function () {
         console.log("Estamos en vivo");
         updateSpotifyMostListened();
+        chargeData();
     }
 );
+
+function chargeData() {
+    imgDisc1 = document.getElementById('imageDisc1');
+    imgDisc2 = document.getElementById('imageDisc2');
+    imgDisc3 = document.getElementById('imageDisc3');
+
+    nameSong1 = document.querySelector('#nameSong1');
+    nameSong2 = document.querySelector('#nameSong2');
+    nameSong3 = document.querySelector('#nameSong3');
+
+    discSong1 = document.querySelector('#discSong1');
+    discSong2 = document.querySelector('#discSong2');
+    discSong3 = document.querySelector('#discSong3');
+}
 
 function button1() {
     window.open(link1);

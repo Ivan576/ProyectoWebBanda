@@ -65,14 +65,23 @@
         color: #58333E;
     }
 
+
+.socialContainer {
+    height: auto;
+    padding: 20px;
+}
+
 .socialMedia {
     background-color: #5E3666;
     width: 100vw;
-    padding: 200px 0;
+    padding: 100px 0;
     height: auto;
 }
 
     .socialMedia .facebookImg {
+        max-height: 200px;
+        max-width: 200px;
+        margin: 0 auto;
         height: 200px;
         width: 200px;
         background-image: url(../../Recursos/Imagenes/Logos/facebookBlanco.png);
@@ -81,23 +90,29 @@
         background-size: cover;
     }
 
-    .socialMedia .instagramImg {
-        height: 200px;
-        width: 200px;
-        background-image: url(../../Recursos/Imagenes/Logos/instagramBlanco.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+.socialMedia .instagramImg {
+    max-height: 200px;
+    max-width: 200px;
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+    background-image: url(../../Recursos/Imagenes/Logos/instagramBlanco.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-    .socialMedia .youtubeImg {
-        height: 200px;
-        width: 200px;
-        background-image: url(../../Recursos/Imagenes/Logos/youtubebLANCO.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+.socialMedia .youtubeImg {
+    max-height: 200px;
+    max-width: 200px;
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+    background-image: url(../../Recursos/Imagenes/Logos/youtubebLANCO.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .footerMain {
     background-color: rgb(0,0,0);

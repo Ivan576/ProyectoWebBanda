@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using ProyectoWebBanda.CapaDatos;
+using ProyectoWebBanda.CapaNegocios;
 using SpotifyAPI.Web;
 
 
@@ -13,8 +15,33 @@ namespace ProyectoWebBanda.CapaUsuarios
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            dateOne.InnerHtml = "El Juaco";
-            calculatorSoap = new ServiceReference2.CalculatorSoapClient();
+            updateDateTable();
+        }
+
+        /*
+         * Actualiza la tabla del menu principal
+         */
+        private void updateDateTable() {
+            DaoEventos daoEventos = new DaoEventos();
+            List<Evento> eventos = daoEventos.mMostrarEventosOrdenados();
+            // Cargando los datos de la base de datos
+            dateOne.InnerText = eventos[0].Fecha.Split(char.Parse(" "))[0];
+            nameOne.InnerText = eventos[0].Nombre;
+            placeOne.InnerText = eventos[0].Ubicacion;
+            linkOne.InnerText = eventos[0].LinkEvento;
+            linkOne.HRef = "https://" + eventos[0].LinkEvento;
+
+            dateTwo.InnerText = eventos[1].Fecha.Split(char.Parse(" "))[0];
+            nameTwo.InnerText = eventos[1].Nombre;
+            placeTwo.InnerText = eventos[1].Ubicacion;
+            linkTwo.InnerText = eventos[1].LinkEvento;
+            linkTwo.HRef = "https://" + eventos[1].LinkEvento;
+
+            dateTree.InnerText = eventos[2].Fecha.Split(char.Parse(" "))[0];
+            nameTree.InnerText = eventos[2].Nombre;
+            placeTree.InnerText = eventos[2].Ubicacion;
+            linkTree.InnerText = eventos[2].LinkEvento;
+            linkTree.HRef = "https://" + eventos[2].LinkEvento;
         }
 
         protected void btnDates_Click(object sender, EventArgs e)
@@ -22,24 +49,9 @@ namespace ProyectoWebBanda.CapaUsuarios
             Response.Redirect("Evento.aspx",true);
         }
 
-        protected void btnLike_Click(object sender, EventArgs e)
+        protected void aMusic_Click(object sender, EventArgs e)
         {
-            int cant = int.Parse(likes.InnerText);
-            cant = calculatorSoap.Add(cant,1);
-            likes.InnerText = cant + "";
-        }
-
-        // Se crea una instancia del cliente SOAP
-        ServiceReference2.CalculatorSoapClient calculatorSoap;
-        /*
-         * Obtiene el número de likes del span "Likes", posterior a esto le suma 1 y finalmente actualiza el valor en el Span.
-         * Esto sucede cuando se da clic en el botón "Like"
-         */
-        protected void btnLike_Click1(object sender, EventArgs e)
-        {
-            int cant = int.Parse(likes.InnerText);
-            cant = calculatorSoap.Add(cant, 1);
-            likes.InnerText = cant + "";
+            Response.Redirect("Musica.aspx", true);
         }
     }
 }

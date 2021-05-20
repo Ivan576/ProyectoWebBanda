@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="CSS/CommonStyles.css" />
     <link rel="stylesheet" href="CSS/CommonHeader.css" />
     <!-- End CSS classes -->
+    <!-- End CSS classes -->
 
     <!-- Bootstrap -->
     <!-- CSS only Bootstrap -->
@@ -25,10 +26,8 @@
     <title></title>
 </head>
 <body>
+    <script src="JavaScript/MenuPrincipal.js"></script>
     <form id="form1" runat="server">
-        <script src="JavaScript/MenuPrincipal.js"></script>
-        <asp:ScriptManager ID="ScriptManager1" runat="server">
-        </asp:ScriptManager>
         <div>
             <div class="header">
                 <a class="logo">
@@ -37,10 +36,10 @@
                 <input class="menu-btn" type="checkbox" id="menu-btn" />
                 <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
                 <ul class="menu">
-                    <li><a href="#work">Música</a></li>
-                    <li><a href="#about">Eventos</a></li>
-                    <li><a href="#careers">Noticias</a></li>
-                    <li><a href="#contact">Multimedia</a></li>
+                    <li><a href="Musica.aspx">Música</a></li>
+                    <li><a href="Evento.aspx">Eventos</a></li>
+                    <li><a href="Noticia.aspx">Noticias</a></li>
+                    <li><a href="Multimedia.aspx">Multimedia</a></li>
                 </ul>
             </div>
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -68,12 +67,6 @@
                         <div class="imageDisc"></div>
                     </a>
                     <h2>Amor en desamor</h2>
-                    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
-                        <ContentTemplate>
-                            <button id="btnLike" class="brownButton" type="button" runat="server" onserverclick="btnLike_Click">Like</button>
-                            <span>❤️</span><span id="likes" runat="server">0</span>
-                        </ContentTemplate>
-                    </asp:UpdatePanel>
                 </div>
             </div>
             <div class="eventSection parentCenter">
@@ -96,33 +89,45 @@
                             <td>
                                 <span id="placeOne" runat="server"></span>
                             </td>
-                            <td><a id="linkOne" href="#" runat="server">www.cupuato.com</a></td>
+                            <td><a id="linkOne" href="#" runat="server"></a></td>
                         </tr>
                         <tr>
-                            <td>05/05/2021</td>
-                            <td class="rowName">Cupuato Fest</td>
-                            <td>Cupuato</td>
-                            <td><a href="#">www.cupuato.com</a></td>
+                            <td>
+                                <span id="dateTwo" runat="server"></span>
+                            </td>
+                            <td class="rowName">
+                                <span id="nameTwo" runat="server"></span>
+                            </td>
+                            <td>
+                                <span id="placeTwo" runat="server"></span>
+                            </td>
+                            <td><a id="linkTwo" href="#" runat="server"></a></td>
                         </tr>
                         <tr>
-                            <td>05/05/2021</td>
-                            <td class="rowName">Cupuato Fest</td>
-                            <td>Cupuato</td>
-                            <td><a href="#">www.cupuato.com</a></td>
+                            <td>
+                                <span id="dateTree" runat="server"></span>
+                            </td>
+                            <td class="rowName">
+                                <span id="nameTree" runat="server"></span>
+                            </td>
+                            <td>
+                                <span id="placeTree" runat="server"></span>
+                            </td>
+                            <td><a id="linkTree" href="#" runat="server"></a></td>
                         </tr>
                     </table>
                     <button id="btnDates" class="brownButton" type="button" runat="server" onserverclick="btnDates_Click">Más fechas</button>
                 </div>
             </div>
             <div class="socialMedia row align-items-center">
-                <div class="col-4 col-md-4 col-sm-12 parentCenter">
-                    <div class="facebookImg childCenter"></div>
+                <div class="socialContainer col-4 col-md-4 col-sm-12 col-xs-12">
+                    <a href="https://www.facebook.com/120millasoficial" target="_blank"><div class="facebookImg"></div></a>
                 </div>
-                <div class="col-4 col-md-4 col-sm-12 parentCenter">
-                    <div class="instagramImg childCenter"></div>
+                <div class="socialContainer col-4 col-md-4 col-sm-12 col-xs-12">
+                    <a href="https://www.instagram.com/120_millas/" target="_blank"><div class="instagramImg"></div></a>
                 </div>
-                <div class="col-4 col-md-4 col-sm-12  parentCenter">
-                    <div class="youtubeImg childCenter"></div>
+                <div class="socialContainer col-4 col-md-4 col-sm-12 col-xs-12">
+                    <a href="https://www.youtube.com/channel/UCp69-Fpky33cpcQC7ufcU_g" target="_blank"><div class="youtubeImg"></div></a>
                 </div>
             </div>
             <div class="eventSection parentCenter">
@@ -162,9 +167,9 @@
                 <div class="childCenter">
                     <img class="footerLogo" src="../Recursos/Imagenes/Logos/120millas logo.png" />
                     <div class="socialMediaFooter">
-                        <img class="instagramFooter" src="../Recursos/Imagenes/Logos/instagram.png" />
-                        <img class="facebookFooter" src="../Recursos/Imagenes/Logos/Facebook.png" />
-                        <img class="youtubeFooter" src="../Recursos/Imagenes/Logos/Youtube.png" />
+                        <a href="https://www.instagram.com/120_millas/" target="_blank"><img class="instagramFooter" src="../Recursos/Imagenes/Logos/instagram.png" /></a>
+                        <a href="https://www.facebook.com/120millasoficial" target="_blank"><img class="facebookFooter" src="../Recursos/Imagenes/Logos/Facebook.png" /></a>
+                        <a href="https://www.youtube.com/channel/UCp69-Fpky33cpcQC7ufcU_g" target="_blank"><img class="youtubeFooter" src="../Recursos/Imagenes/Logos/Youtube.png" /></a>
                     </div>
                     <p>
                         120 millas®, todos los derechos reservados.
