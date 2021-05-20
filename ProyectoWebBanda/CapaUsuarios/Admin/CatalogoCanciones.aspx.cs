@@ -38,5 +38,10 @@ namespace ProyectoWebBanda.CapaUsuarios.Admin
 			gvCanciones.DataBind();
 
 		}
-	}
+
+        protected void gvCanciones_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

@@ -99,38 +99,38 @@
           <div class="row galeria">
                <div class="col s12 m4 l3">
                     <div class="material-placeholder">
-                        <iframe src="https://www.facebook.com/plugins/video.php?height=308&href=https%3A%2F%2Fwww.facebook.com%2F120millasoficial%2Fvideos%2F338230613691062%2F&show_text=false&width=560" alt=""  class="responsive-video  materialboxed" ></iframe>
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=308&href=https%3A%2F%2Fwww.facebook.com%2F120millasoficial%2Fvideos%2F338230613691062%2F&show_" alt=""  class="responsive-img  materialboxed" ></iframe>
                     </div>
                </div>
                
                <div class="col s12 m4 l3">
                     <div class="material-placeholder">
-                        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F120millasoficial%2Fvideos%2F2199799673619312%2F&show_text=false&width=560"alt=""  class="responsive-video  materialboxed" ></iframe>
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F120millasoficial%2Fvideos%2F2199799673619312%2F&show_"alt=""  class="responsive-video  materialboxed" ></iframe>
                     </div>
                </div>
                
                <div class="col s12 m4 l3">
-                        <iframe src="https://www.facebook.com/plugins/video.php?height=308&href=https%3A%2F%2Fwww.facebook.com%2F120millasoficial%2Fvideos%2F2173525402870232%2F&show_text=false&width=560" alt=""  class="responsive-video  materialboxed" ></iframe>
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=308&href=https%3A%2F%2Fwww.facebook.com%2F120millasoficial%2Fvideos%2F2173525402870232%2F&show" alt=""  class="responsive-video  materialboxed" ></iframe>
                </div>
                
                <div class="col s12 m4 l3">
-                        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F120millasoficial%2Fvideos%2F2151461115076661%2F&show_text=false&width=560" alt=""  class="responsive-video  materialboxed" ></iframe>
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F120millasoficial%2Fvideos%2F2151461115076661%2F&show_" alt=""  class="responsive-video  materialboxed" ></iframe>
                </div>
                
                <div class="col s12 m4 l3">
-                        <iframe src="https://www.facebook.com/plugins/video.php?height=308&href=https%3A%2F%2Fwww.facebook.com%2F120millasoficial%2Fvideos%2F1947777068778401%2F&show_text=false&width=560" alt=""  class="responsive-video  materialboxed" ></iframe>
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=308&href=https%3A%2F%2Fwww.facebook.com%2F120millasoficial%2Fvideos%2F1947777068778401%2F&show" alt=""  class="responsive-video  materialboxed" ></iframe>
                </div>
                
                <div class="col s12 m4 l3">
-                        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F120millasoficial%2Fvideos%2F1946115152277926%2F&show_text=false&width=560" alt=""  class="responsive-video  materialboxed" ></iframe>
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F120millasoficial%2Fvideos%2F1946115152277926%2F&show_" alt=""  class="responsive-video  materialboxed" ></iframe>
                </div>
                
                <div class="col s12 m4 l3">
-                        <iframe src="https://www.facebook.com/plugins/video.php?height=311&href=https%3A%2F%2Fwww.facebook.com%2F120millasoficial%2Fvideos%2F1865434953679280%2F&show_text=false&width=560" alt=""  class="responsive-video  materialboxed" ></iframe>
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=311&href=https%3A%2F%2Fwww.facebook.com%2F120millasoficial%2Fvideos%2F1865434953679280%2F&show_" alt=""  class="responsive-video  materialboxed" ></iframe>
                </div>
                
                <div class="col s12 m4 l3">
-                        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F120millasoficial%2Fvideos%2F2199799673619312%2F&show_text=false&width=560" alt=""  class="responsive-video  materialboxed" ></iframe>
+                        <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F120millasoficial%2Fvideos%2F2199799673619312%2F&show_" alt=""  class="responsive-video  materialboxed" ></iframe>
                </div>
                
           </div>

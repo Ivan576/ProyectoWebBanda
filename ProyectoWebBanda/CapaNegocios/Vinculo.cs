@@ -22,6 +22,7 @@ namespace ProyectoWebBanda.CapaNegocios
         public Vinculo(int idVinculo){
             this.idVinculo=idVinculo;
         }
+        public Vinculo() {  }
 
     }
 }

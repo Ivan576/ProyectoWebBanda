@@ -146,6 +146,7 @@
     <Content Include="CapaUsuarios\CSS\estilos.css" />
     <Content Include="CapaUsuarios\CSS\Eventos.css" />
     <Content Include="CapaUsuarios\CSS\MainMenu.css" />
+    <Content Include="CapaUsuarios\CSS\CatalogoVinculos.css" />
     <Content Include="CapaUsuarios\CSS\Multimedia.css" />
     <Content Include="CapaUsuarios\CSS\Musica.css" />
     <Content Include="CapaUsuarios\CSS\Noticia.css" />
@@ -222,6 +223,7 @@
     <Compile Include="CapaDatos\DaoConexion.cs" />
     <Compile Include="CapaDatos\DaoEventos.cs" />
     <Compile Include="CapaDatos\DaoNoticias.cs" />
+    <Compile Include="CapaDatos\DaoVinculo.cs" />
     <Compile Include="CapaNegocios\AdminObjeto.cs" />
     <Compile Include="CapaNegocios\Album.cs" />
     <Compile Include="CapaNegocios\Cancion.cs" />

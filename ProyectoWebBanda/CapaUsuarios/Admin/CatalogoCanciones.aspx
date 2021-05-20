@@ -57,7 +57,7 @@
                 <asp:Button ID="btnCargar" Class="btn btn-outline-info" runat="server" style="margin-left: 16px" Text="Cargar datos para editar" />
             </div>
             <div>
-                <asp:GridView ID="gvCanciones" runat="server">
+                <asp:GridView ID="gvCanciones" runat="server" OnSelectedIndexChanged="gvCanciones_SelectedIndexChanged">
                 </asp:GridView>
             </div>
         </div>
