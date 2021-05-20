@@ -183,6 +183,8 @@
     </None>
     <Content Include="Recursos\Imagenes\Ajax\1426.jpg" />
     <Content Include="Recursos\Imagenes\Ajax\i.png" />
+    <Content Include="Recursos\Imagenes\Eventos\AmorEnDesamor.PNG" />
+    <Content Include="Recursos\Imagenes\Eventos\Evento1.png" />
     <Content Include="Recursos\Imagenes\Fotos\carousel1.jpg" />
     <Content Include="Recursos\Imagenes\Fotos\carousel2.jpg" />
     <Content Include="Recursos\Imagenes\Fotos\carousel3.jpg" />

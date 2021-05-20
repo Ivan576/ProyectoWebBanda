@@ -15,39 +15,39 @@ namespace ProyectoWebBanda.CapaUsuarios
     {
 
         /// <summary>
-        /// Control dateOne.
+        /// Control fecha.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl dateOne;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl fecha;
 
         /// <summary>
-        /// Control nameOne.
+        /// Control nombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl nameOne;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl nombre;
 
         /// <summary>
-        /// Control placeOne.
+        /// Control ubicacion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl placeOne;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ubicacion;
 
         /// <summary>
-        /// Control linkOne.
+        /// Control link.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor linkOne;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor link;
     }
 }

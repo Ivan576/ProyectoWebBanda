@@ -36,7 +36,7 @@
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                        <img src="../Recursos/Imagenes/Portadas/AmorEnDesamorFondo.PNG" class="d-block w-100" alt="...">
+                        <img src="../Recursos/Imagenes/Eventos/Evento1.PNG" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
                         <img src="../Recursos/Imagenes/Fotos/carousel2.jpg" class="d-block w-100" alt="...">
@@ -60,30 +60,25 @@
                         </tr>
                         <tr>
                             <td>
-                                <span id="dateOne" runat="server"></span>
+                                <span id="fecha" runat="server"></span>
                             </td>
+
                             <td class="rowName">
-                                <span id="nameOne" runat="server"></span>
+                                <span id="nombre" runat="server"></span>
                             </td>
+
                             <td>
-                                <span id="placeOne" runat="server"></span>
+                                <span id="ubicacion" runat="server"></span>
                             </td>
-                            <td><a id="linkOne" href="#" runat="server">www.cupuato.com</a></td>
+
+                            <td>
+                                <a id="link" href="#" runat="server"></a>
+                            </td>
+
                         </tr>
-                        <tr>
-                            <td>05/05/2021</td>
-                            <td class="rowName">Cupuato Fest</td>
-                            <td>Cupuato</td>
-                            <td><a href="#">www.cupuato.com</a></td>
-                        </tr>
-                        <tr>
-                            <td>05/05/2021</td>
-                            <td class="rowName">Cupuato Fest</td>
-                            <td>Cupuato</td>
-                            <td><a href="#">www.cupuato.com</a></td>
-                        </tr>
+                        
                     </table>
-                    <button id="btnDates">Más fechas</button>
+                   
                 </div>
             </div>
 
