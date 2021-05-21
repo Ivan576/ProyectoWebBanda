@@ -222,12 +222,14 @@
     <Compile Include="CapaDatos\DaoCancion.cs" />
     <Compile Include="CapaDatos\DaoConexion.cs" />
     <Compile Include="CapaDatos\DaoEventos.cs" />
+    <Compile Include="CapaDatos\DaoMultimedia.cs" />
     <Compile Include="CapaDatos\DaoNoticias.cs" />
     <Compile Include="CapaDatos\DaoVinculo.cs" />
     <Compile Include="CapaNegocios\AdminObjeto.cs" />
     <Compile Include="CapaNegocios\Album.cs" />
     <Compile Include="CapaNegocios\Cancion.cs" />
     <Compile Include="CapaNegocios\Evento.cs" />
+    <Compile Include="CapaNegocios\Multimedia.cs" />
     <Compile Include="CapaNegocios\Noticia.cs" />
     <Compile Include="CapaNegocios\Vinculo.cs" />
     <Compile Include="CapaUsuarios\Admin\AdminLogin.aspx.cs">

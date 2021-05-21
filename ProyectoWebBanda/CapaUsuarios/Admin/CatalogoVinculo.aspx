@@ -30,10 +30,10 @@
         </ul>
     </div>
      <div class="row">
-               <div class="col s12 center-align">
-                    <h1 class="titulo">CatalogoVinculos</h1>
-               </div>
-          </div>
+        <div class="col s12 center-align">
+            <h1 class="titulo">CatalogoVinculos</h1>
+        </div>
+     </div>
     <form id="form1" runat="server">
         <div>
         </div>
