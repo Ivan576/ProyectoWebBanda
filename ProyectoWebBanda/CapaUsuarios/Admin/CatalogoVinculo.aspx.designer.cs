@@ -7,11 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace ProyectoWebBanda.CapaUsuarios
+namespace ProyectoWebBanda.CapaUsuarios.Admin
 {
 
 
-    public partial class CatalogoVinculos
+    public partial class CatalogoVinculo
     {
 
         /// <summary>
@@ -33,13 +33,22 @@ namespace ProyectoWebBanda.CapaUsuarios
         protected global::System.Web.UI.WebControls.Panel Panel1;
 
         /// <summary>
-        /// Control Label1.
+        /// Control Panel2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Panel Panel2;
+
+        /// <summary>
+        /// Control txt.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label txt;
 
         /// <summary>
         /// Control txtVinculo.
@@ -51,13 +60,22 @@ namespace ProyectoWebBanda.CapaUsuarios
         protected global::System.Web.UI.WebControls.TextBox txtVinculo;
 
         /// <summary>
-        /// Control Panel2.
+        /// Control btnSelecionar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel2;
+        protected global::System.Web.UI.WebControls.Button btnSelecionar;
+
+        /// <summary>
+        /// Control Panel3.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Panel3;
 
         /// <summary>
         /// Control Label2.
@@ -78,13 +96,13 @@ namespace ProyectoWebBanda.CapaUsuarios
         protected global::System.Web.UI.WebControls.TextBox txtNombreVinculo;
 
         /// <summary>
-        /// Control Panel3.
+        /// Control Panel4.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel3;
+        protected global::System.Web.UI.WebControls.Panel Panel4;
 
         /// <summary>
         /// Control Label3.
@@ -114,13 +132,13 @@ namespace ProyectoWebBanda.CapaUsuarios
         protected global::System.Web.UI.WebControls.Panel Panel5;
 
         /// <summary>
-        /// Control brnAgregar.
+        /// Control btnAgregar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button brnAgregar;
+        protected global::System.Web.UI.WebControls.Button btnAgregar;
 
         /// <summary>
         /// Control btnEditar.
@@ -139,15 +157,6 @@ namespace ProyectoWebBanda.CapaUsuarios
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnEliminar;
-
-        /// <summary>
-        /// Control Panel4.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel Panel4;
 
         /// <summary>
         /// Control gvVinculo.

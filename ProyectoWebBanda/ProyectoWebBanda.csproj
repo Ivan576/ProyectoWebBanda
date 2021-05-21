@@ -139,7 +139,7 @@
     <Content Include="CapaUsuarios\Admin\CatalogoEventos.aspx" />
     <Content Include="CapaUsuarios\Admin\CatalogoMultimedia.aspx" />
     <Content Include="CapaUsuarios\Admin\CatalogoNoticias.aspx" />
-    <Content Include="CapaUsuarios\Admin\CatalogoVinculos.aspx" />
+    <Content Include="CapaUsuarios\Admin\CatalogoVinculo.aspx" />
     <Content Include="CapaUsuarios\Ajax.aspx" />
     <Content Include="CapaUsuarios\CSS\CatalogoCanciones.css" />
     <Content Include="CapaUsuarios\CSS\CommonStyles.css" />
@@ -279,12 +279,12 @@
     <Compile Include="CapaUsuarios\Admin\CatalogoNoticias.aspx.designer.cs">
       <DependentUpon>CatalogoNoticias.aspx</DependentUpon>
     </Compile>
-    <Compile Include="CapaUsuarios\Admin\CatalogoVinculos.aspx.cs">
-      <DependentUpon>CatalogoVinculos.aspx</DependentUpon>
+    <Compile Include="CapaUsuarios\Admin\CatalogoVinculo.aspx.cs">
+      <DependentUpon>CatalogoVinculo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CapaUsuarios\Admin\CatalogoVinculos.aspx.designer.cs">
-      <DependentUpon>CatalogoVinculos.aspx</DependentUpon>
+    <Compile Include="CapaUsuarios\Admin\CatalogoVinculo.aspx.designer.cs">
+      <DependentUpon>CatalogoVinculo.aspx</DependentUpon>
     </Compile>
     <Compile Include="CapaUsuarios\Ajax.aspx.cs">
       <DependentUpon>Ajax.aspx</DependentUpon>
