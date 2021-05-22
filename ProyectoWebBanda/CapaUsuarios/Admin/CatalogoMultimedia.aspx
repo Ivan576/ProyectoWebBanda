@@ -24,7 +24,7 @@
             <li><a href="CatalogoEventos.aspx">Eventos</a></li>
             <li><a href="CatalogoMultimedia.aspx">Multimedia</a></li>
             <li><a href="CatalogoNoticias.aspx">Noticias</a></li>
-            <li><a href="CatalogoVinculos.aspx">Vinculos</a></li>
+            <li><a href="CatalogoVinculo.aspx">Vinculos</a></li>
         </ul>
     </div>
     <form id="form1" runat="server">
