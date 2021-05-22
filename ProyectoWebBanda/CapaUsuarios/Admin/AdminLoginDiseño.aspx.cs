@@ -1,33 +1,33 @@
-﻿using System;
+﻿using ProyectoWebBanda.CapaDatos;
+using ProyectoWebBanda.CapaNegocios;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using ProyectoWebBanda.CapaNegocios;
-using ProyectoWebBanda.CapaDatos;
+
 namespace ProyectoWebBanda.CapaUsuarios.Admin
 {
-    public partial  class WebForm1 : System.Web.UI.Page
+    public partial class AdminLogin_Diseño : System.Web.UI.Page
     {
-       
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void txtPassword_TextChanged(object sender, EventArgs e)
+        protected void Button1_Click(object sender, EventArgs e)
         {
-       
+            
         }
 
-        protected void btnLog_Click(object sender, EventArgs e)
+        protected void btnLogin_Click(object sender, EventArgs e)
         {
             AdminObjeto obj = new AdminObjeto();
             obj.usuario = txtUser.Text;
             obj.contrasenia = txtPassword.Text;
-           // ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('{****************')", true);
-
+            // ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('{****************')", true);
+            
             DaoConexion conexion = new DaoConexion();
 
             Boolean can = conexion.login(obj);
@@ -41,6 +41,11 @@ namespace ProyectoWebBanda.CapaUsuarios.Admin
                 ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('usuario no valido')", true);
 
             }
+        }
+
+        protected void txtUser_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

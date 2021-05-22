@@ -132,7 +132,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="CapaUsuarios\Admin\AdminLogin.aspx" />
+    <Content Include="CapaUsuarios\Admin\AdminLoginDiseño.aspx" />
     <Content Include="CapaUsuarios\Admin\AdminMainMenu.aspx" />
     <Content Include="CapaUsuarios\Admin\CatalogoAlbum.aspx" />
     <Content Include="CapaUsuarios\Admin\CatalogoCanciones.aspx" />
@@ -145,12 +145,14 @@
     <Content Include="CapaUsuarios\CSS\CommonStyles.css" />
     <Content Include="CapaUsuarios\CSS\estilos.css" />
     <Content Include="CapaUsuarios\CSS\Eventos.css" />
+    <Content Include="CapaUsuarios\CSS\main.css" />
     <Content Include="CapaUsuarios\CSS\MainMenu.css" />
     <Content Include="CapaUsuarios\CSS\CatalogoVinculos.css" />
     <Content Include="CapaUsuarios\CSS\Multimedia.css" />
     <Content Include="CapaUsuarios\CSS\Musica.css" />
     <Content Include="CapaUsuarios\CSS\Noticia.css" />
     <Content Include="CapaUsuarios\CSS\CommonHeader.css" />
+    <Content Include="CapaUsuarios\CSS\util.css" />
     <Content Include="CapaUsuarios\Evento.aspx" />
     <Content Include="CapaUsuarios\index.aspx" />
     <Content Include="CapaUsuarios\InicioSesion.aspx" />
@@ -232,12 +234,12 @@
     <Compile Include="CapaNegocios\Multimedia.cs" />
     <Compile Include="CapaNegocios\Noticia.cs" />
     <Compile Include="CapaNegocios\Vinculo.cs" />
-    <Compile Include="CapaUsuarios\Admin\AdminLogin.aspx.cs">
-      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    <Compile Include="CapaUsuarios\Admin\AdminLoginDiseño.aspx.cs">
+      <DependentUpon>AdminLoginDiseño.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CapaUsuarios\Admin\AdminLogin.aspx.designer.cs">
-      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    <Compile Include="CapaUsuarios\Admin\AdminLoginDiseño.aspx.designer.cs">
+      <DependentUpon>AdminLoginDiseño.aspx</DependentUpon>
     </Compile>
     <Compile Include="CapaUsuarios\Admin\AdminMainMenu.aspx.cs">
       <DependentUpon>AdminMainMenu.aspx</DependentUpon>
