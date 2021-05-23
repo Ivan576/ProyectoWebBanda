@@ -5,7 +5,7 @@
 
 /*Panel de Eventos*/
 .eventSection {
-    height: 100vh;
+    height: 10vh;
     background: rgb(209,209,209);
     background: linear-gradient(0deg, rgba(209,209,209,1) 0%, rgba(255,255,255,1) 100%);
 }
@@ -34,3 +34,46 @@
     .eventTable .rowName {
         color: #58333E;
     }
+
+
+    /*Footer*/
+
+
+.footerMain {
+    background-color: rgb(0,0,0);
+    height: 400px;
+}
+
+    .footerMain .footerLogo {
+        width: 25vw;
+        max-width: 200px;
+        height: auto;
+    }
+
+.socialMediaFooter {
+    margin: 50px;
+    width: 100vw;
+}
+
+    .socialMediaFooter img {
+        max-width: 100px;
+        width: 14vw;
+        height: auto;
+    }
+
+    .socialMediaFooter .instagramFooter {
+        float: left;
+        margin-left: 20%;
+    }
+
+    .socialMediaFooter .facebookFooter {
+    }
+
+    .socialMediaFooter .youtubeFooter {
+        float: right;
+        margin-right: 20%;
+    }
+
+.footerMain p {
+    color: #919191;
+}
