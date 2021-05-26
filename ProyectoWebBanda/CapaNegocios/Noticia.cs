@@ -8,15 +8,16 @@ namespace ProyectoWebBanda.CapaNegocios
     public class Noticia
     {
         public int idNoticia { get; set; }
-        public String titulo {get;set;}
-        public String resumen {get;set;}
-        public String contenido{get;set;} 
-        public DateTime fecha {get;set;}
-        public String imagenPortada {get;set;}
-        public String imagenesContenido {get;set;}
+        public string titulo {get;set;}
+        public string resumen {get;set;}
+        public string contenido {get;set;} 
+        public string fecha {get;set;}
+        public string imagenPortada {get;set;}
+        public string imagenesContenido {get;set;}
 
-        public Noticia(String titulo,String resumen,String contenido,DateTime fecha,String imagenPortada,String imagenesContenido){
-            
+        public Noticia(int idNoticia, string titulo, string resumen, string contenido, string fecha, string imagenPortada, string imagenesContenido){
+
+            this.idNoticia = idNoticia;
             this.titulo=titulo;
             this.resumen=resumen;
             this.contenido=contenido;
