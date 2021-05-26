@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using ProyectoWebBanda.CapaDatos;
 using ProyectoWebBanda.CapaNegocios;
@@ -21,7 +22,8 @@ namespace ProyectoWebBanda.CapaUsuarios
         /*
          * Actualiza la tabla del menu principal
          */
-        private void updateDateTable() {
+        private void updateDateTable()
+        {
             DaoEventos daoEventos = new DaoEventos();
             List<Evento> eventos = daoEventos.mMostrarEventosOrdenados();
             // Cargando los datos de la base de datos
@@ -46,7 +48,7 @@ namespace ProyectoWebBanda.CapaUsuarios
 
         protected void btnDates_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Evento.aspx",true);
+            Response.Redirect("Evento.aspx", true);
         }
 
         protected void aMusic_Click(object sender, EventArgs e)

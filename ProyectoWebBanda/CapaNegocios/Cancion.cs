@@ -12,17 +12,17 @@ namespace ProyectoWebBanda.CapaNegocios
         public string Duracion { get; set; }
         public string Genero { get; set; }
         public int idAlbum { get; set; }
-        public int idPlataforma { get; set; }
+        public string srcSpotify { get; set; }
 
         public Cancion() { }
 
-        public Cancion(int idCancion, string Nombre, string Duracion, string Genero, int idAlbum, int idPlataforma) {
+        public Cancion(int idCancion, string Nombre, string Duracion, string Genero, int idAlbum, string srcSpotify) {
             this.idCancion = idCancion;
             this.Nombre = Nombre;
             this.Duracion = Duracion;
             this.Genero = Genero;
             this.idAlbum = idAlbum;
-            this.idPlataforma = idPlataforma;
+            this.srcSpotify = srcSpotify;
         }
 
         public Cancion(int idCancion)

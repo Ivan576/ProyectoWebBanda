@@ -36,25 +36,25 @@ namespace ProyectoWebBanda.CapaUsuarios.Admin
 
         protected void btnAgregar_Click1(object sender, EventArgs e)
         {
-            Album album = new Album(txtTitle.Text.ToString(),ddlTipo.SelectedValue.ToString(),Int32.Parse(txtCantSongs.Text.ToString()),"aaa",txtArtista.Text.ToString(),1);
-            daoAlbum.insertar(ref album);
-            gvAlbums.DataSource = daoAlbum.obtenerTodos();
-            gvAlbums.DataBind();
+            //Album album = new Album(txtTitle.Text.ToString(),ddlTipo.SelectedValue.ToString(),Int32.Parse(txtCantSongs.Text.ToString()),"aaa",txtArtista.Text.ToString(),1);
+            //daoAlbum.insertar(ref album);
+            //gvAlbums.DataSource = daoAlbum.obtenerTodos();
+            //gvAlbums.DataBind();
         }
 
         protected void btnEditar_Click(object sender, EventArgs e)
         {
-            int idAlbum = Int32.Parse(txtID.Text.ToString());
-            string titulo = txtTitle.Text.ToString();
-            string tipo = ddlTipo.SelectedValue.ToString();
-            int noCanciones = Int32.Parse(txtCantSongs.Text.ToString());
-            string portada = "IUnaportada";
-            string artista = txtArtista.Text.ToString();
-            int idPlataforma = 1;
-            Album album = new Album(idAlbum,titulo,tipo,noCanciones,portada,artista,idPlataforma);
-            daoAlbum.editar(album);
-            gvAlbums.DataSource = daoAlbum.obtenerTodos();
-            gvAlbums.DataBind();
+            //int idAlbum = Int32.Parse(txtID.Text.ToString());
+            //string titulo = txtTitle.Text.ToString();
+            //string tipo = ddlTipo.SelectedValue.ToString();
+            //int noCanciones = Int32.Parse(txtCantSongs.Text.ToString());
+            //string portada = "IUnaportada";
+            //string artista = txtArtista.Text.ToString();
+            //int idPlataforma = 1;
+            //Album album = new Album(idAlbum,titulo,tipo,noCanciones,portada,artista,idPlataforma);
+            //daoAlbum.editar(album);
+            //gvAlbums.DataSource = daoAlbum.obtenerTodos();
+            //gvAlbums.DataBind();
         }
     }
 }

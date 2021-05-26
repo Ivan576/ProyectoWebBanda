@@ -32,7 +32,7 @@ namespace ProyectoWebBanda
         [WebMethod]
         public List<Cancion> ObtenerCanciones()
         {
-            return new DaoCancion().mMostrarCanciones();
+            return new DaoCancion().MostrarCanciones();
         }
 
     }

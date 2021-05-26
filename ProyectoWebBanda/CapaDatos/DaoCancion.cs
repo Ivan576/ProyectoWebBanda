@@ -26,14 +26,14 @@ namespace ProyectoWebBanda.CapaDatos
 
 
         //METODO PARA OBTENER TODOS LOS EVENTOS DE LA BASE DE DATOS
-        public List<Cancion> mMostrarCanciones()
+        public List<Cancion> MostrarCanciones()
         {
             //SE LLAMA LA CONEXION A LA BASE DE DATOS
             conexion();
             try
             {
                 //SE HACE LA CONSULTA A LA BASE DE DATOS
-                String strSql = "Select * from cancion";
+                String strSql = "Select * from cancion;";
                 MySqlCommand cm = new MySqlCommand(strSql, conex);
                 MySqlDataReader dr = cm.ExecuteReader();
 
@@ -42,7 +42,41 @@ namespace ProyectoWebBanda.CapaDatos
                 //SE LEEN LOS DATOS Y SE LLENA LA LISTA CON LOS DATOS LEIDOS
                 while (dr.Read())
                 {
-                    Cancion can = new Cancion(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr.GetString(3), dr.GetInt32(4),dr.GetInt32(5));
+                    Cancion can = new Cancion(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr.GetString(3), dr.GetInt32(4),dr.GetString(5));
+                    lista.Add(can);
+
+                }
+                return lista;
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            } finally {
+                conex.Close();
+            }
+
+        }
+
+        public List<Cancion> MostrarCancionesPorAlbum(long idAlbum)
+        {
+            //SE LLAMA LA CONEXION A LA BASE DE DATOS
+            conexion();
+            try
+            {
+                //SE HACE LA CONSULTA A LA BASE DE DATOS
+                String strSql = "Select * from cancion where idAlbum = @id;";
+                MySqlCommand cm = new MySqlCommand(strSql, conex);
+                cm.Parameters.AddWithValue("@id",idAlbum);
+                MySqlDataReader dr = cm.ExecuteReader();
+
+                //SE CREA UNA LISTA DE TIPO EVENTO
+                List<Cancion> lista = new List<Cancion>();
+                //SE LEEN LOS DATOS Y SE LLENA LA LISTA CON LOS DATOS LEIDOS
+                while (dr.Read())
+                {
+                    Cancion can = new Cancion(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr.GetString(3), dr.GetInt32(4), dr.GetString(5));
                     lista.Add(can);
 
                 }
@@ -54,6 +88,10 @@ namespace ProyectoWebBanda.CapaDatos
             {
 
                 throw;
+            }
+            finally
+            {
+                conex.Close();
             }
 
         }
@@ -69,7 +107,7 @@ namespace ProyectoWebBanda.CapaDatos
             try
             {
                 //CONSULTA PARA INSERTAR EN LA BASE DE DATOS 
-                string sql = "Insert into cancion (nombre,duracion,genero,idAlbum,idPlataforma)values('" + objcan.Nombre + "','" + objcan.Duracion + "','" + objcan.Genero + "'," + objcan.idAlbum + ","+ objcan.idPlataforma +")";
+                string sql = "Insert into cancion (nombre,duracion,genero,idAlbum,idPlataforma)values('" + objcan.Nombre + "','" + objcan.Duracion + "','" + objcan.Genero + "'," + objcan.idAlbum + ","+ objcan.srcSpotify +")";
                 comman = new MySqlCommand(sql, conex);
                 comman.ExecuteNonQuery();
                 return comman.LastInsertedId;

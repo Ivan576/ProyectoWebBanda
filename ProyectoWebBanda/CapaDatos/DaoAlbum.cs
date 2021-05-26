@@ -20,52 +20,151 @@ namespace ProyectoWebBanda.CapaDatos
             }
             catch (Exception)
             {
+                conex.Close();
                 throw;
             }
         }
-        public DataTable obtenerTodos()
+        public List<Album> obtenerTodos()
         {
-            DataTable datos = new DataTable();
-            conexion();
-            MySqlCommand command = new MySqlCommand("select * from album;", conex);
-            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
-            DataSet ds = new DataSet();
-            adapter.Fill(ds, "Album");
-            datos = ds.Tables["Album"];
-            conex.Close();
+            List<Album> datos = new List<Album>();
+            try
+            {
+                conexion();
+                MySqlCommand command = new MySqlCommand("select * from album;", conex);
+                MySqlDataReader reader = command.ExecuteReader();
+                while (reader.Read()) {
+                    datos.Add(new Album(reader.GetInt32(0),reader.GetString(1),reader.GetString(2),reader.GetInt32(3), reader.GetString(4), reader.GetString(5), reader.GetString(6)));
+                }
+            }
+            catch (Exception ex)
+            {
+                return datos;
+                throw;
+            }finally
+            {
+                conex.Close();
+            }
             return datos;
         }
 
-        public void insertar(ref Album objAlbum)
+        public Album obtenerPorId(long id)
         {
-            conexion();
-            String sql = "insert into album(titulo, tipo, noCanciones, portada, artista, idPlataforma) values ('"+objAlbum.Titulo+"','"+objAlbum.Tipo+"',"+objAlbum.NoCanciones+",'"+objAlbum.Portada+"','"+objAlbum.Artista+"',"+objAlbum.idPlataforma+");";
-            MySqlCommand mySql = new MySqlCommand(sql, conex);
-            mySql.ExecuteNonQuery();
-            mySql.Dispose();
-            mySql.Clone();
-            conex.Close();
+            Album album = new Album();
+            try
+            {
+                conexion();
+                MySqlCommand command = new MySqlCommand("select * from album where idAlbum=@id;", conex);
+                command.Parameters.AddWithValue("@id",id);
+                MySqlDataReader reader = command.ExecuteReader();
+                while (reader.Read()) {
+                    album = new Album(reader.GetInt32(0), reader.GetString(1), reader.GetString(2), reader.GetInt32(3), reader.GetString(4), reader.GetString(5), reader.GetString(6));
+                }
+            }
+            catch (Exception ex)
+            {
+                return album;
+                throw;
+            }finally
+            {
+                conex.Close();
+            }
+            return album;
         }
 
-        public void eliminar(int idAlbum)
+        public long insertar(ref Album objAlbum)
         {
-            conexion();
-            string sql = "DELETE FROM album WHERE idAlbum=" + idAlbum;
-            MySqlCommand miCom = new MySqlCommand(sql, conex);
-            miCom.ExecuteNonQuery();
-            miCom.Dispose();
-            conex.Close();
+            MySqlCommand mySql = null;
+            try
+            {
+                conexion();
+                String sql = "insert into album(titulo, tipo, noCanciones, artista, srcPortada, srcSpotify) values (@titulo, @tipo, @noCanciones, @artista, @srcPortada, @srcSpotify);";
+                mySql = new MySqlCommand(sql, conex);
+                mySql.Parameters.AddWithValue("@titulo", objAlbum.Titulo);
+                mySql.Parameters.AddWithValue("@tipo", objAlbum.Tipo);
+                mySql.Parameters.AddWithValue("@noCanciones", objAlbum.NoCanciones);
+                mySql.Parameters.AddWithValue("@artista", objAlbum.Artista);
+                mySql.Parameters.AddWithValue("@srcPortada", objAlbum.Portada);
+                mySql.Parameters.AddWithValue("@srcSpotify", objAlbum.SrcSpotify);
+                mySql.ExecuteNonQuery();
+                return mySql.LastInsertedId;
+            }
+            catch(Exception ex)
+            {
+                return -1;
+            }
+            finally
+            {
+                if (mySql != null)
+                {
+                    mySql.Dispose();
+                    mySql.Clone();
+                }
+            }
         }
 
-        public void editar(Album album)
+        public bool editar(Album objAlbum)
         {
-            conexion();
-            String sql = "UPDATE album set titulo = '" + album.Titulo + "', tipo = '" + album.Tipo + "', noCanciones=" + album.NoCanciones + ",portada = '" + album.Portada + "', artista='"+album.Artista+"', idPlataforma="+album.idPlataforma+ " where idAlbum = '" + album.idAlbum + "';";
-            MySqlCommand mySql = new MySqlCommand(sql, conex);
-            mySql.ExecuteNonQuery();
-            mySql.Dispose();
-            mySql.Clone();
-            conex.Close();
+            MySqlCommand mySql = null;
+            try
+            {
+                conexion();
+                String sql = "UPDATE Album SET titulo=@titulo, tipo=@tipo, noCanciones=@noCanciones, artista=@artista, srcPortada=@srcPortada, srcSpotify=@srcSpotify WHERE idAlbum=@idAlbum;";
+                mySql = new MySqlCommand(sql, conex);
+                mySql.Parameters.AddWithValue("@titulo", objAlbum.Titulo);
+                mySql.Parameters.AddWithValue("@tipo", objAlbum.Tipo);
+                mySql.Parameters.AddWithValue("@noCanciones", objAlbum.NoCanciones);
+                mySql.Parameters.AddWithValue("@artista", objAlbum.Artista);
+                mySql.Parameters.AddWithValue("@srcPortada", objAlbum.Portada);
+                mySql.Parameters.AddWithValue("@srcSpotify", objAlbum.SrcSpotify);
+                mySql.Parameters.AddWithValue("@idAlbum", objAlbum.idAlbum);
+                int id = Convert.ToInt32(mySql.ExecuteNonQuery());
+                if (id == 0)
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+            finally
+            {
+                if (mySql != null)
+                {
+                    mySql.Dispose();
+                    mySql.Clone();
+                }
+            }
+        }
+
+        public void eliminar(long idAlbum)
+        {
+            MySqlCommand miCom = null;
+            try
+            {
+                conexion();
+                string sql = "DELETE FROM album WHERE idAlbum=@id;";
+                miCom = new MySqlCommand(sql, conex);
+                miCom.Parameters.AddWithValue("@id", idAlbum);
+                miCom.ExecuteNonQuery();
+            }
+            catch(Exception ex)
+            {
+
+            }
+            finally
+            {
+                if (miCom != null)
+                {
+                    miCom.Dispose();
+                }
+                conex.Close();
+            }
+            
         }
     }
 }
