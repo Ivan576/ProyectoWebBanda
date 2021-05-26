@@ -33,8 +33,9 @@
                </div>
           </div>
     <form id="form1" runat="server">
-        <div>
-        </div>
+          <a class="logo">
+                    <img src="../../Recursos/Imagenes/Fotos/carousel1.jpg" />
+                </a>
     </form>
 
 </body>

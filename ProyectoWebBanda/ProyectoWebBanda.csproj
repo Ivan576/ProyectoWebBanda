@@ -140,7 +140,6 @@
     <Content Include="CapaUsuarios\Admin\CatalogoMultimedia.aspx" />
     <Content Include="CapaUsuarios\Admin\CatalogoNoticias.aspx" />
     <Content Include="CapaUsuarios\Admin\CatalogoVinculo.aspx" />
-    <Content Include="CapaUsuarios\Admin\CatalogoVinculos.aspx" />
     <Content Include="CapaUsuarios\Admin\EdicionAlbumes.aspx" />
     <Content Include="CapaUsuarios\Ajax.aspx" />
     <Content Include="CapaUsuarios\CSS\CatalogoCanciones.css" />
