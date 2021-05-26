@@ -15,7 +15,7 @@ namespace ProyectoWebBanda.CapaDatos
         {
             try
             {
-                conex.ConnectionString = "server=localhost;database=web120M;user id =root;password=root;";
+                conex.ConnectionString = "server=localhost;database=web120M;user id =root;password=root1;";
                 conex.Open();
             }
             catch (Exception)
@@ -94,7 +94,7 @@ namespace ProyectoWebBanda.CapaDatos
             try
             {
                 //SE HACE LA CONSULTA A LA BASE DE DATOS
-                String strSql = "Select * from Evento order by fecha desc;";
+                String strSql = "Select * from Evento order by fecha asc;";
                 MySqlCommand cm = new MySqlCommand(strSql, conex);
                 MySqlDataReader dr = cm.ExecuteReader();
 

@@ -30,7 +30,7 @@ imagenesContenido blob not null
 create table Vinculo
 (
 idVinculo int primary key auto_increment,
-nombreVinculo varchar(50) not null,
+nombreVinculo text not null,
 imagen blob null
 );
 

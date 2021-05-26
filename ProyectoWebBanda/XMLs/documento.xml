@@ -3,10 +3,10 @@
   <evento>
     <datos>
       <IdEvento>1</IdEvento>
-      <Nombre>120M</Nombre>
-      <Fecha>2021-03-17 09:20:00</Fecha>
-      <Ubicacion>Cupuato</Ubicacion>
-      <Link>https://www.google.com/watch?v=kBsycvSU6r8</Link>
+      <Nombre>Toquin tour</Nombre>
+      <Fecha>17/02/2021 09:20:00 a. m.</Fecha>
+      <Ubicacion>Morelia</Ubicacion>
+      <Link>https://www.youtube.com/watch?v=k6zleqvT2Zo</Link>
     </datos>
   </evento>
   <evento>
@@ -34,6 +34,42 @@
       <Fecha>2021-06-11 11:11</Fecha>
       <Ubicacion>Moroleón</Ubicacion>
       <Link>www.moroleon.com</Link>
+    </datos>
+  </evento>
+  <evento>
+    <datos>
+      <IdEvento>24</IdEvento>
+      <Nombre>Uriangato Fest</Nombre>
+      <Fecha>2021-06-26</Fecha>
+      <Ubicacion>Uriangato</Ubicacion>
+      <Link>https://www.google.com/tourUri</Link>
+    </datos>
+  </evento>
+  <evento>
+    <datos>
+      <IdEvento>25</IdEvento>
+      <Nombre>120 Millas Gira</Nombre>
+      <Fecha>2021-05-28 20:00:00</Fecha>
+      <Ubicacion>Yuriria </Ubicacion>
+      <Link>https://www.youtube.com/watch?v=c-yRN55iaQY</Link>
+    </datos>
+  </evento>
+  <evento>
+    <datos>
+      <IdEvento>26</IdEvento>
+      <Nombre>Gira por Michoacán</Nombre>
+      <Fecha>2021-06-01 21:20:00</Fecha>
+      <Ubicacion>Santa Ana Maya</Ubicacion>
+      <Link>https://www.youtube.com/watch?v=k6zleqvT2Zo</Link>
+    </datos>
+  </evento>
+  <evento>
+    <datos>
+      <IdEvento>27</IdEvento>
+      <Nombre>Fest 120M</Nombre>
+      <Fecha>2021-06-30 19:30:00</Fecha>
+      <Ubicacion>Monterrey</Ubicacion>
+      <Link>https://www.youtube.com/watch?v=6swmTBVI83k</Link>
     </datos>
   </evento>
 </eventos>

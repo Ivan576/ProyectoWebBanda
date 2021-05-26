@@ -7,11 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace ProyectoWebBanda.CapaUsuarios
+namespace ProyectoWebBanda.CapaUsuarios.Admin
 {
 
 
-    public partial class CatalogoMultimedia
+    public partial class CatalogoVinculo
     {
 
         /// <summary>
@@ -33,111 +33,138 @@ namespace ProyectoWebBanda.CapaUsuarios
         protected global::System.Web.UI.WebControls.Panel Panel1;
 
         /// <summary>
-        /// Control txtIdMultimedia.
+        /// Control Panel2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtIdMultimedia;
+        protected global::System.Web.UI.WebControls.Panel Panel2;
 
         /// <summary>
-        /// Control btnBuscar.
+        /// Control txt.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBuscar;
+        protected global::System.Web.UI.WebControls.Label txt;
 
         /// <summary>
-        /// Control lblLinkName.
+        /// Control txtVinculo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLinkName;
+        protected global::System.Web.UI.WebControls.TextBox txtVinculo;
 
         /// <summary>
-        /// Control txtitulo.
+        /// Control btnSelecionar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtitulo;
+        protected global::System.Web.UI.WebControls.Button btnSelecionar;
 
         /// <summary>
-        /// Control lblImagen.
+        /// Control Panel3.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblImagen;
+        protected global::System.Web.UI.WebControls.Panel Panel3;
 
         /// <summary>
-        /// Control txtFormato.
+        /// Control Label2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFormato;
+        protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// Control Label1.
+        /// Control txtNombreVinculo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.TextBox txtNombreVinculo;
 
         /// <summary>
-        /// Control txtlink.
+        /// Control Panel4.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtlink;
+        protected global::System.Web.UI.WebControls.Panel Panel4;
 
         /// <summary>
-        /// Control gvVinvulos.
+        /// Control Label3.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvVinvulos;
+        protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// Control btnMultimediaAgregar.
+        /// Control txtImagen.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnMultimediaAgregar;
+        protected global::System.Web.UI.WebControls.TextBox txtImagen;
 
         /// <summary>
-        /// Control btnMultimediaEditar.
+        /// Control Panel5.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnMultimediaEditar;
+        protected global::System.Web.UI.WebControls.Panel Panel5;
 
         /// <summary>
-        /// Control btnMultimediaEliminar.
+        /// Control btnAgregar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnMultimediaEliminar;
+        protected global::System.Web.UI.WebControls.Button btnAgregar;
+
+        /// <summary>
+        /// Control btnEditar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnEditar;
+
+        /// <summary>
+        /// Control btnEliminar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnEliminar;
+
+        /// <summary>
+        /// Control gvVinculo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvVinculo;
     }
 }
