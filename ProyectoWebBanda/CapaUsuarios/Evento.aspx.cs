@@ -60,11 +60,11 @@ namespace ProyectoWebBanda.CapaUsuarios
             link5.InnerText = evento[5].LinkEvento;
             link5.HRef = "https://" + evento[5].LinkEvento;
 
-            //fecha6.InnerText = evento[6].Fecha.Split(char.Parse(" "))[0];
-            //nombre6.InnerText = evento[6].Nombre;
-            //ubicacion6.InnerText = evento[6].Ubicacion;
-            //link6.InnerText = evento[6].LinkEvento;
-            //link6.HRef = "https://" + evento[6].LinkEvento;
+            fecha6.InnerText = evento[6].Fecha.Split(char.Parse(" "))[0];
+            nombre6.InnerText = evento[6].Nombre;
+            ubicacion6.InnerText = evento[6].Ubicacion;
+            link6.InnerText = evento[6].LinkEvento;
+            link6.HRef = "https://" + evento[6].LinkEvento;
 
 
 
