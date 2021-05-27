@@ -109,7 +109,9 @@ namespace ProyectoWebBanda.CapaUsuarios.Admin
 			else
             {
 				string idStr = algo.Replace("btnDelete", "");
-				daoAlbum.eliminar(int.Parse(idStr));
+				long idDelete = long.Parse(idStr);
+				daoCancion.eliminarPorAlbum(idDelete); 
+				daoAlbum.eliminar(idDelete);
 				albumContainer.InnerHtml = "";
 				chargeData();
             }

@@ -220,5 +220,31 @@ namespace ProyectoWebBanda.CapaDatos
             }
 
         }
+
+        public void eliminarPorAlbum(long idSong)
+        {
+            MySqlCommand miCom = null;
+            try
+            {
+                conexion();
+                string sql = "DELETE FROM cancion WHERE idAlbum=@id;";
+                miCom = new MySqlCommand(sql, conex);
+                miCom.Parameters.AddWithValue("@id", idSong);
+                miCom.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                if (miCom != null)
+                {
+                    miCom.Dispose();
+                }
+                conex.Close();
+            }
+
+        }
     }
 }
