@@ -24,6 +24,15 @@ namespace ProyectoWebBanda.CapaUsuarios.Admin
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// Control ScriptManager1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
+
+        /// <summary>
         /// Control albumTitle.
         /// </summary>
         /// <remarks>
@@ -87,6 +96,15 @@ namespace ProyectoWebBanda.CapaUsuarios.Admin
         protected global::System.Web.UI.HtmlControls.HtmlButton btnChargeAlbum;
 
         /// <summary>
+        /// Control UpdatePanel1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
+
+        /// <summary>
         /// Control gvCanciones.
         /// </summary>
         /// <remarks>
@@ -94,6 +112,24 @@ namespace ProyectoWebBanda.CapaUsuarios.Admin
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView gvCanciones;
+
+        /// <summary>
+        /// Control idSong.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText idSong;
+
+        /// <summary>
+        /// Control btnCargar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton btnCargar;
 
         /// <summary>
         /// Control songName.
@@ -105,13 +141,13 @@ namespace ProyectoWebBanda.CapaUsuarios.Admin
         protected global::System.Web.UI.HtmlControls.HtmlInputText songName;
 
         /// <summary>
-        /// Control Text1.
+        /// Control songDuration.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Text1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText songDuration;
 
         /// <summary>
         /// Control songGenere.

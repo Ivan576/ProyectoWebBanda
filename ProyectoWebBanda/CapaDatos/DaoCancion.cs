@@ -96,6 +96,42 @@ namespace ProyectoWebBanda.CapaDatos
 
         }
 
+        public Cancion MostrarCancionesPorID(long id)
+        {
+            //SE LLAMA LA CONEXION A LA BASE DE DATOS
+            conexion();
+            try
+            {
+                //SE HACE LA CONSULTA A LA BASE DE DATOS
+                String strSql = "Select * from cancion where idCancion = @id;";
+                MySqlCommand cm = new MySqlCommand(strSql, conex);
+                cm.Parameters.AddWithValue("@id", id);
+                MySqlDataReader dr = cm.ExecuteReader();
+
+                //SE CREA UNA LISTA DE TIPO EVENTO
+                Cancion cancion = null;
+                //SE LEEN LOS DATOS Y SE LLENA LA LISTA CON LOS DATOS LEIDOS
+                while (dr.Read())
+                {
+                    cancion = new Cancion(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr.GetString(3), dr.GetInt32(4), dr.GetString(5));
+
+                }
+                conex.Close();
+                return cancion;
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            finally
+            {
+                conex.Close();
+            }
+
+        }
+
 
         //METODO PARA INSERTAR UN NUEVO EVENTO A LA BASE DE DATOS
         //METODO PARA INSERTAR UN NUEVO EVENTO A LA BASE DE DATOS
@@ -107,13 +143,14 @@ namespace ProyectoWebBanda.CapaDatos
             try
             {
                 //CONSULTA PARA INSERTAR EN LA BASE DE DATOS 
-                string sql = "Insert into cancion (nombre,duracion,genero,idAlbum,idPlataforma)values('" + objcan.Nombre + "','" + objcan.Duracion + "','" + objcan.Genero + "'," + objcan.idAlbum + ","+ objcan.srcSpotify +")";
+                string sql = "Insert into cancion (nombre,duracion,genero,idAlbum,srcSpotify)values('" + objcan.Nombre + "','" + objcan.Duracion + "','" + objcan.Genero + "'," + objcan.idAlbum + ",'"+ objcan.srcSpotify +"')";
                 comman = new MySqlCommand(sql, conex);
                 comman.ExecuteNonQuery();
                 return comman.LastInsertedId;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                return -1;
                 throw;
             }
             finally
@@ -123,11 +160,65 @@ namespace ProyectoWebBanda.CapaDatos
                 conex.Close();
                 conex.Dispose();
             }
-            return -1;
         }
 
+        public long actualizar(ref Cancion objcan)
+        {
+            //SE LLAMA LA CONEXION
+            conexion();
+            MySqlCommand comman = new MySqlCommand();
+            try
+            {
+                //CONSULTA PARA INSERTAR EN LA BASE DE DATOS 
+                string sql = "update cancion set nombre=@nombre, duracion=@duracion, genero=@genero, idAlbum=@idAlbum, srcSpotify=@srcSpotify where idCancion=@idCancion";
+                comman = new MySqlCommand(sql, conex);
+                comman.Parameters.AddWithValue("@nombre", objcan.Nombre);
+                comman.Parameters.AddWithValue("@duracion", objcan.Duracion);
+                comman.Parameters.AddWithValue("@genero", objcan.Genero);
+                comman.Parameters.AddWithValue("@idAlbum", objcan.idAlbum);
+                comman.Parameters.AddWithValue("@srcSpotify", objcan.srcSpotify);
+                comman.Parameters.AddWithValue("@idCancion", objcan.idCancion);
+                comman.ExecuteNonQuery();
+                return comman.LastInsertedId;
+            }
+            catch (Exception ex)
+            {
+                return -1;
+                throw;
+            }
+            finally
+            {
+                //SIEMPRE SE CIERRA LA CONEXION AUNQUE ARROJE ERROR 
+                comman.Dispose();
+                conex.Close();
+                conex.Dispose();
+            }
+        }
 
+        public void eliminar(long idSong)
+        {
+            MySqlCommand miCom = null;
+            try
+            {
+                conexion();
+                string sql = "DELETE FROM cancion WHERE idCancion=@id;";
+                miCom = new MySqlCommand(sql, conex);
+                miCom.Parameters.AddWithValue("@id", idSong);
+                miCom.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
 
+            }
+            finally
+            {
+                if (miCom != null)
+                {
+                    miCom.Dispose();
+                }
+                conex.Close();
+            }
 
+        }
     }
 }

@@ -7,17 +7,26 @@ namespace ProyectoWebBanda.CapaNegocios
 {
     public class Cancion
     {
-        public int idCancion { get; set; }
+        public long idCancion { get; set; }
         public string Nombre { get; set; }
         public string Duracion { get; set; }
         public string Genero { get; set; }
-        public int idAlbum { get; set; }
+        public long idAlbum { get; set; }
         public string srcSpotify { get; set; }
 
         public Cancion() { }
 
-        public Cancion(int idCancion, string Nombre, string Duracion, string Genero, int idAlbum, string srcSpotify) {
+        public Cancion(long idCancion, string Nombre, string Duracion, string Genero, long idAlbum, string srcSpotify) {
             this.idCancion = idCancion;
+            this.Nombre = Nombre;
+            this.Duracion = Duracion;
+            this.Genero = Genero;
+            this.idAlbum = idAlbum;
+            this.srcSpotify = srcSpotify;
+        }
+
+        public Cancion(string Nombre, string Duracion, string Genero, long idAlbum, string srcSpotify)
+        {
             this.Nombre = Nombre;
             this.Duracion = Duracion;
             this.Genero = Genero;

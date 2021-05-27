@@ -20,8 +20,9 @@
 </head>
 <body>
     <form id="form1" runat="server" enctype="multipart/form-data">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
         <div>
-                    <div class="lrow lcol-2 lcol-md-1 lcol-sm-1">
+                    <div class="lrow lcol-1 lcol-md-1 lcol-sm-1">
                         <div class="mainContainer">
                             <h2>Album</h2>
 
@@ -60,14 +61,33 @@
                         </div>
                         <div class="mainContainer">
                             <h2>Canciones</h2>
-                            <asp:GridView ID="gvCanciones" runat="server"></asp:GridView>
+                            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                                <ContentTemplate>
+                                    <asp:GridView ID="gvCanciones" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3">
+                                        <FooterStyle BackColor="White" ForeColor="#000066" />
+                                        <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
+                                        <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
+                                        <RowStyle ForeColor="#000066" />
+                                        <SelectedRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />
+                                        <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                                        <SortedAscendingHeaderStyle BackColor="#007DBB" />
+                                        <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                                        <SortedDescendingHeaderStyle BackColor="#00547E" />
+                                    </asp:GridView>
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+                            <div class="form-group">
+                                <label for="songName">Id (solamente para editar y eliminar):</label>
+                                <input type="text" id="idSong" name="idSong" class="form-control" runat="server" />
+                            </div>
+                            <button class="btn btn-primary buttonAdd" id="btnCargar" runat="server" onserverclick="BtnChargeSong_onClick">Cargar datos</button>
                             <div class="form-group">
                                 <label for="songName">Nombre:</label>
                                 <input type="text" id="songName" name="songName" class="form-control" runat="server" />
                             </div>
                             <div class="form-group">
-                                <label>Duración:</label>
-                                <input type="text" id="Text1" name="songName" class="form-control" runat="server" />
+                                <label>Duración (HH:MM:SS):</label>
+                                <input type="text" id="songDuration" name="songDuration" class="form-control" runat="server" />
                             </div>
                             <div class="form-group">
                                 <label for="songGenere">Género:</label>
@@ -78,9 +98,9 @@
                                 <input type="text" id="srcSongSpotify" name="srcSongSpotify" class="form-control" runat="server" />
                             </div>
 
-                            <button class="btn btn-primary buttonAdd" id="btnAddSong" runat="server">Agregar</button>
-                            <button class="btn btn-light buttonAdd" id="btnEditSong" runat="server">Editar</button>
-                            <button class="btn btn-danger buttonAdd" id="btnEreaseSong" runat="server">Eliminar</button>
+                            <button class="btn btn-primary buttonAdd" id="btnAddSong" runat="server" onserverclick="BtnSaveSong_onClick">Agregar</button>
+                            <button class="btn btn-light buttonAdd" id="btnEditSong" runat="server" onserverclick="BtnEditSong_onClick">Editar</button>
+                            <button class="btn btn-danger buttonAdd" id="btnEreaseSong" runat="server" onserverclick="BtnDeleteSong_onClick">Eliminar</button><br />
                         </div>
                     </div>
         </div>
