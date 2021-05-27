@@ -19,7 +19,6 @@
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="menu">
-            <li><a href="CatalogoAlbum.aspx">Album</a></li>
             <li><a href="CatalogoCanciones.aspx">Canciones</a></li>
             <li><a href="CatalogoEventos.aspx">Eventos</a></li>
             <li><a href="CatalogoMultimedia.aspx">Multimedia</a></li>

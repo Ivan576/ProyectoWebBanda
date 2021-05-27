@@ -98,6 +98,7 @@ namespace ProyectoWebBanda.CapaUsuarios.Admin
                         daoCancion.insertar(ref songInsert);
                         gvCanciones.DataSource = daoCancion.MostrarCancionesPorAlbum(id);
                         gvCanciones.DataBind();
+                        updateSongsAlbum();
                     }
                     catch (Exception)
                     {
@@ -168,7 +169,17 @@ namespace ProyectoWebBanda.CapaUsuarios.Admin
                 daoCancion.eliminar(idCancion);
                 gvCanciones.DataSource = daoCancion.MostrarCancionesPorAlbum(id);
                 gvCanciones.DataBind();
+                updateSongsAlbum();
             }
+        }
+
+        private void updateSongsAlbum()
+        {
+            album = daoAlbum.obtenerPorId(id);
+            List<Cancion> canciones = daoCancion.MostrarCancionesPorAlbum(id);
+            album.NoCanciones = canciones.Count;
+            daoAlbum.editar(album);
+
         }
 
         protected void BtnChargeAlbum_onClick(object sender, EventArgs e)
