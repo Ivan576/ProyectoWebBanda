@@ -6,7 +6,7 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" href="CSS/Eventos.css"/>
-    <%--<link rel="stylesheet" href="CSS/CommonStyles.css"/>--%>
+    <link rel="stylesheet" href="CSS/CommonStyles.css"/>
     <link rel="stylesheet" href="CSS/CommonHeader.css"/>
     
     <!-- End CSS classes -->
@@ -210,7 +210,7 @@
                 </div>
             </div>
 
-             <%--<footer class="footerMain parentCenter">
+             <footer class="footerMain parentCenter">
                 <div class="childCenter">
                     <img class="footerLogo" src="../Recursos/Imagenes/Logos/120millas logo.png" />
                     <div class="socialMediaFooter">
@@ -222,7 +222,7 @@
                         120 millas®, todos los derechos reservados.
                     </p>
                 </div>
-            </footer>--%>
+            </footer>
 
             </div>
     </form>
