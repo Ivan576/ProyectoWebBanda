@@ -7,6 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" href="CSS/Noticia.css"/>
     <link rel="stylesheet" href="CSS/CommonHeader.css"/>
+    <link rel="stylesheet" href="CSS/CommonColumns.css"/>
     <style>
         
     </style>
@@ -25,10 +26,10 @@
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="menu">
-            <li><a href="#work">Música</a></li>
-            <li><a href="#about">Eventos</a></li>
-            <li><a href="#careers">Noticias</a></li>
-            <li><a href="#contact">Multimedia</a></li>
+                    <li><a href="Musica.aspx">Música</a></li>
+                    <li><a href="Evento.aspx">Eventos</a></li>
+                    <li><a href="Noticia.aspx">Noticias</a></li>
+                    <li><a href="Multimedia.aspx">Multimedia</a></li>
         </ul>
     </div>
 
@@ -36,20 +37,20 @@
     <main class="container">
         
         
-        <div >
-        
-        
+        <div class="lrow lcol-2 lcol-md-1 lcol-sm-1">
+              
             <article class="art">
               
                 <header>
-               <h2>Noticia 1</h2>
+               <h2><span id="title1" runat="server"></span></h2>
+                    <p><span id="fecha1" runat="server"></span></p> 
                </header> 
                     <div class="material-placeholder">
                          <img src="../Recursos/Imagenes/ImagenesMultimedia/img-6.jpg" alt="" class="responsive-img materialboxed" data-caption="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
                     </div>
                    <main>
-                     <h3>Resumen</h3>
-                     <p>Contenido de la noticia</p> 
+                     <h4><span id="resumen1" runat="server"></span></h4>
+                     <p><span id="contenido1" runat="server"></span></p> 
                   </main>           
                 
              </article>
@@ -57,14 +58,47 @@
              <article class="art">
               
                 <header>
-               <h2>Noticia 2</h2>
+               <h2><span id="title2" runat="server"></span></h2>
+                    <p><span id="fecha2" runat="server"></span></p>
                </header> 
                     <div class="material-placeholder">
-                         <img src="../Recursos/Imagenes/ImagenesMultimedia/img-6.jpg" alt="" class="responsive-img materialboxed" data-caption="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+                         <img src="../Recursos/Imagenes/ImagenesMultimedia/img-9.jpg" alt="" class="responsive-img materialboxed" data-caption="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
                     </div>
                    <main>
-                     <h3>Resumen</h3>
-                     <p>Contenido de la noticia</p> 
+                     <h4><span id="resumen2" runat="server"></span></h4>
+                     <p><span id="contenido2" runat="server"></span></p> 
+                  </main>           
+                
+             </article>
+
+            <article class="art">
+              
+                <header>
+               <h2><span id="title3" runat="server"></span></h2>
+                    <p><span id="fecha3" runat="server"></span></p> 
+               </header> 
+                    <div class="material-placeholder">
+                         <img src="../Recursos/Imagenes/ImagenesMultimedia/img-1.jpg" alt="" class="responsive-img materialboxed" data-caption="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+                    </div>
+                   <main>
+                     <h4><span id="resumen3" runat="server"></span></h4>
+                     <p><span id="contenido3" runat="server"></span></p> 
+                  </main>           
+                
+             </article>
+
+            <article class="art">
+              
+                <header>
+               <h2><span id="title4" runat="server"></span></h2>
+                    <p><span id="fecha4" runat="server"></span></p> 
+               </header> 
+                    <div class="material-placeholder">
+                         <img src="../Recursos/Imagenes/ImagenesMultimedia/img-10.jpg" alt="" class="responsive-img materialboxed" data-caption="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+                    </div>
+                   <main>
+                     <h4><span id="resumen4" runat="server"></span></h4>
+                     <p><span id="contenido4" runat="server"></span></p>  
                   </main>           
                 
              </article>

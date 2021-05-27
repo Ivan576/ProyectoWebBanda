@@ -185,5 +185,40 @@ namespace ProyectoWebBanda.CapaDatos
 
 
 
+        //public List<Evento> mMostrarNoticiasOrdenadas()
+        //{
+        //    //SE LLAMA LA CONEXION A LA BASE DE DATOS
+        //    conexion();
+        //    try
+        //    {
+        //        //SE HACE LA CONSULTA A LA BASE DE DATOS
+        //        String strSql = "Select idNoticia, titulo, resumen, contenido, DATE_FORMAT(fecha, \"%Y-%m-%d\"), imagenPortada, imagenesContenido from Noticia order by fecha asc;";
+        //        MySqlCommand cm = new MySqlCommand(strSql, conex);
+        //        MySqlDataReader dr = cm.ExecuteReader();
+
+        //        //SE CREA UNA LISTA DE TIPO EVENTO
+        //        List<Evento> lista = new List<Evento>();
+        //        //SE LEEN LOS DATOS Y SE LLENA LA LISTA CON LOS DATOS LEIDOS
+        //        while (dr.Read())
+        //        {
+        //            Evento eve = new Evento(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr.GetString(3), dr.GetString(4));
+        //            lista.Add(eve);
+
+        //        }
+        //        conex.Close();
+        //        return lista;
+
+        //    }
+        //    catch (Exception)
+        //    {
+
+        //        throw;
+        //    }
+
+        //}
+
+
+
+
     }
 }
