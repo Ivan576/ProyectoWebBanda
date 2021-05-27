@@ -86,7 +86,7 @@
                 <br />
                 <br />
                 <asp:TextBox ID="txtId" runat="server" Style="margin-top: 0px"></asp:TextBox>
-                <asp:Button ID="btnCargar" Class="btn btn-outline-info" runat="server" Style="margin-left: 16px" Text="Cargar datos para editar" />
+                <asp:Button ID="btnCargar" Class="btn btn-outline-info" runat="server" Style="margin-left: 16px" Text="Cargar datos para editar" OnClick="btnCargar_Click" />
             </ContentTemplate>
         
         </div>
