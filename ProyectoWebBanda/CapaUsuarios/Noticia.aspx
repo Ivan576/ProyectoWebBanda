@@ -5,7 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link rel="stylesheet" href="CSS/Noticia.css" />
+    <link rel="stylesheet" href="CSS/Noticia.css"/>
+    <link rel="stylesheet" href="CSS/CommonHeader.css"/>
     <style>
         
     </style>
@@ -30,5 +31,53 @@
             <li><a href="#contact">Multimedia</a></li>
         </ul>
     </div>
+
+
+    <main class="container">
+        
+        
+        <div >
+        
+        
+            <article class="art">
+              
+                <header>
+               <h2>Noticia 1</h2>
+               </header> 
+                    <div class="material-placeholder">
+                         <img src="../Recursos/Imagenes/ImagenesMultimedia/img-6.jpg" alt="" class="responsive-img materialboxed" data-caption="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+                    </div>
+                   <main>
+                     <h3>Resumen</h3>
+                     <p>Contenido de la noticia</p> 
+                  </main>           
+                
+             </article>
+
+             <article class="art">
+              
+                <header>
+               <h2>Noticia 2</h2>
+               </header> 
+                    <div class="material-placeholder">
+                         <img src="../Recursos/Imagenes/ImagenesMultimedia/img-6.jpg" alt="" class="responsive-img materialboxed" data-caption="Lorem ipsum dolor sit amet, consectetur adipisicing elit.">
+                    </div>
+                   <main>
+                     <h3>Resumen</h3>
+                     <p>Contenido de la noticia</p> 
+                  </main>           
+                
+             </article>
+
+
+
+
+
+
+
+        </div>
+
+    </main>
+
 </body>
 </html>

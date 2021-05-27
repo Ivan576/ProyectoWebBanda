@@ -6,7 +6,7 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" href="CSS/Eventos.css"/>
-    <link rel="stylesheet" href="CSS/CommonStyles.css"/>
+    <%--<link rel="stylesheet" href="CSS/CommonStyles.css"/>--%>
     <link rel="stylesheet" href="CSS/CommonHeader.css"/>
     
     <!-- End CSS classes -->
@@ -26,6 +26,7 @@
     <title></title>
 </head>
 <body>
+
     <form id="form1" runat="server">
         <div>
             <div class="header">
